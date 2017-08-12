@@ -1,0 +1,11 @@
+xset m 1 0 &
+xset s off &
+xset -dpms &
+setxkbmap gb &
+xsetroot -cursor_name left_ptr &
+xrdb .config/urxvt &
+feh --bg-scale http://i.imgur.com/oX8t24R.jpg &
+autocutsel -fork &
+autocutsel -fork -selection PRIMARY &
+sxhkd -c .config/sxhkd &
+exec bspwm -c .config/bspwm

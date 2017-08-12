@@ -1,0 +1,30 @@
+urxvt.perl-ext:
+urxvt.perl-ext-common:
+urxvt.externalBorder:   0
+urxvt.internalBorder:   0
+urxvt.saveLines:        0
+urxvt.scrollBar:        false
+urxvt.font:             xft:Ubuntu Mono:pixelsize=14
+urxvt.iso14755:         false
+
+urxvt.foreground:   #ffffff
+urxvt.background:   #111111
+urxvt.cursorColor:  #ffffff
+
+urxvt.color0:       #111111
+urxvt.color1:       #ff7777
+urxvt.color2:       #99cc99
+urxvt.color3:       #ffcc66
+urxvt.color4:       #6699cc
+urxvt.color5:       #cc99cc
+urxvt.color6:       #66cccc
+urxvt.color7:       #ffffff
+
+urxvt.color8:       #777777
+urxvt.color9:       #ff7777
+urxvt.color10:      #99cc99
+urxvt.color11:      #ffcc66
+urxvt.color12:      #6699cc
+urxvt.color13:      #cc99cc
+urxvt.color14:      #66cccc
+urxvt.color15:      #ffffff

@@ -1,0 +1,25 @@
+set -g default-terminal "tmux-256color"
+set -g default-command bash
+set -g mouse on
+set -g escape-time 0
+set -g set-clipboard on
+set -g display-panes-active-colour cyan
+set -g display-panes-colour black
+set -g pane-active-border-style bg=black,fg=cyan
+set -g pane-border-style bg=black,fg=black
+set -g status off
+
+unbind-key -a
+
+bind-key -n M-w select-pane -t :.-
+bind-key -n M-e select-pane -t :.+
+bind-key -n M-s split-window -v -c '#{pane_current_path}'
+bind-key -n M-d split-window -h -c '#{pane_current_path}'
+bind-key -n M-a kill-pane -t :.
+bind-key -n M-z resize-pane -t :. -Z
+
+bind-key -n MouseUp1Pane send-keys -M -t = \; select-pane -t =
+bind-key -n MouseDown1Pane select-pane -t = \; send-keys -M
+
+set -g @scroll-speed-num-lines-per-scroll 1
+run-shell ~/.config/tmux-better-mouse-mode/scroll_copy_mode.tmux
