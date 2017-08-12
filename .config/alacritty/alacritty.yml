@@ -35,7 +35,7 @@ colors:
     text:       '0x111111'
     cursor:     '0xffffff'
   normal:
-    black:      '0x333333'
+    black:      '0x666666'
     red:        '0xff7777'
     green:      '0x99cc99'
     yellow:     '0xffcc66'
