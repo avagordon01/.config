@@ -4,7 +4,7 @@ xset -dpms &
 setxkbmap gb &
 xsetroot -cursor_name left_ptr &
 xrdb .config/urxvt &
-feh --bg-scale http://i.imgur.com/oX8t24R.jpg &
+feh --bg-scale --no-fehbg http://i.imgur.com/oX8t24R.jpg &
 autocutsel -fork &
 autocutsel -fork -selection PRIMARY &
 sxhkd -c .config/sxhkd &
