@@ -5,8 +5,8 @@ set -g escape-time 0
 set -g set-clipboard on
 set -g display-panes-active-colour cyan
 set -g display-panes-colour black
-set -g pane-active-border-style bg=black,fg=cyan
-set -g pane-border-style bg=black,fg=black
+set -g pane-active-border-style bg=default,fg=cyan
+set -g pane-border-style bg=default,fg=black
 set -g status off
 
 unbind-key -a
