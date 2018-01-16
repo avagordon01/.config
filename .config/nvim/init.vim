@@ -16,6 +16,7 @@ set smartcase
 set complete=.,w,b,u,t,i,d
 set clipboard=unnamed
 let g:netrw_dirhistmax=0
+set guicursor=
 syntax on
 colorscheme nofrills
 map <F1> <del>
