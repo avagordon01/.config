@@ -7,8 +7,6 @@ set -g pane-border-style fg=black
 set -g pane-active-border-style fg=blue
 set -g status off
 
-unbind-key -a
-
 bind-key -n M-w select-pane -t :.-
 bind-key -n M-e select-pane -t :.+
 bind-key -n M-s split-window -v -c '#{pane_current_path}'
@@ -24,6 +22,3 @@ set -g @emulate-scroll-for-no-mouse-alternate-buffer on
 run-shell ~/.config/tmux-better-mouse-mode/scroll_copy_mode.tmux
 
 bind-key -n M-y copy-mode -Me
-bind-key -T copy-mode-vi v send -X begin-selection
-bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel 'xclip -i -selection clipboard'
-bind-key -T copy-mode-vi MouseDragEnd1Pane send -XM \;copy-pipe-and-cancel 'xclip -i -selection clipboard > /dev/null'
