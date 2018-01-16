@@ -28,7 +28,7 @@ hi MoreMsg      cterm=none  ctermfg=white   ctermbg=none
 hi Question     cterm=none  ctermfg=white   ctermbg=none
 hi Search       cterm=none  ctermfg=black   ctermbg=cyan
 hi StatusLine   cterm=none  ctermfg=black   ctermbg=white
-hi Todo         cterm=none  ctermfg=lightgreen  ctermbg=none
+hi Todo         cterm=none  ctermfg=green   ctermbg=none
 hi VisualNOS    cterm=none  ctermfg=white   ctermbg=lightblue
 hi WarningMsg   cterm=none  ctermfg=white   ctermbg=darkred
 
