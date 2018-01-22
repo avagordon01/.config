@@ -1,10 +1,9 @@
 hi clear
 syntax reset
 
-hi Normal       cterm=none  ctermfg=white   ctermbg=none
 hi Cursor       cterm=none  ctermfg=black   ctermbg=blue
+hi Normal       cterm=none  ctermfg=white   ctermbg=none
 hi Visual       cterm=reverse ctermfg=blue  ctermbg=none
-hi NonText      cterm=none  ctermfg=darkgrey    ctermbg=none
 
 hi Comment      cterm=none  ctermfg=darkgrey    ctermbg=none
 hi Constant     cterm=none  ctermfg=white   ctermbg=none
@@ -23,3 +22,5 @@ hi Todo         cterm=none  ctermfg=green   ctermbg=none
 hi Search       cterm=none  ctermfg=black   ctermbg=cyan
 hi IncSearch    cterm=none  ctermfg=black   ctermbg=cyan
 hi LineNr       cterm=none  ctermfg=darkgrey    ctermbg=none
+hi NonText      cterm=none  ctermfg=darkgrey    ctermbg=none
+hi MatchParen   cterm=reverse  ctermfg=black   ctermbg=blue
