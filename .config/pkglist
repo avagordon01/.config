@@ -1,8 +1,6 @@
 aria2
-autocutsel
 bash
 bash-completion
-bspwm
 feh
 firefox
 git
@@ -16,9 +14,5 @@ netpbm
 openssh
 pwgen
 ranger
-rxvt-unicode
 sudo
-sxhkd
 tmux
-xorg-xinit
-xsel
