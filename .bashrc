@@ -20,3 +20,7 @@ unset HISTFILE
 export PATH="/home/ava/.cargo/bin:$PATH"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+. /home/ava/.nix-profile/etc/profile.d/nix.sh
+function nx {
+    nix-shell --pure --command "$*"
+}
