@@ -24,7 +24,7 @@ numlock-state='off'
 [org/gnome/shell]
 command-history=['r']
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'gnome-tweak-tool.desktop', 'gnome-control-center.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'gnome-control-center.desktop', 'org.gnome.tweaks.desktop']
 
 [org/gnome/shell/window-switcher]
 app-icon-mode='both'
@@ -51,11 +51,11 @@ gtk-theme='Arc-Darker'
 clock-show-date=false
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-tweak-tool']
+application-children=['org-gnome-tweaks']
 show-in-lock-screen=false
 
-[org/gnome/desktop/notifications/application/gnome-tweak-tool]
-application-id='gnome-tweak-tool.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', 'YaST']
@@ -63,7 +63,7 @@ folder-children=['Utilities', 'Sundry', 'YaST']
 [org/gnome/desktop/app-folders/folders/Utilities]
 translate=true
 categories=['X-GNOME-Utilities']
-apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
 name='X-GNOME-Utilities.directory'
 
 [org/gnome/desktop/app-folders/folders/Sundry]
@@ -78,7 +78,7 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 
 [org/gnome/desktop/screensaver]
-picture-uri='file:///usr/share/backgrounds/gnome/Waves.jpg'
+picture-uri='file:///usr/share/backgrounds/gnome/ColdWarm.jpg'
 primary-color='#ffffff'
 picture-options='spanned'
 secondary-color='#000000'
@@ -113,7 +113,7 @@ switch-windows=@as []
 minimize=['<Super>j']
 
 [org/gnome/desktop/background]
-picture-uri='file:///usr/share/backgrounds/gnome/Waves.jpg'
+picture-uri='file:///usr/share/backgrounds/gnome/ColdWarm.jpg'
 primary-color='#ffffff'
 picture-options='spanned'
 secondary-color='#000000'
