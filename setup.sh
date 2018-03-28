@@ -4,4 +4,4 @@ cd $HOME/.dotfiles
 
 stow bash gdb htop nvim ranger tmux weechat xdg
 
-dconf load / < dconf-dump
+dconf load / < dconf-settings.ini
