@@ -1,7 +1,7 @@
-sudo pacman -Syu base base-devel aria2 bash bash-completion feh firefox git htop imagemagick jq mlocate mpv neovim netpbm openssh pwgen ranger tmux
+sudo pacman -Syu base base-devel aria2 bash bash-completion feh firefox git htop imagemagick jq mlocate mpv neovim netpbm openssh pwgen ranger stow tmux
 
-if [ -f .config/dconf-dump ]; then
-    dconf load / < .config/dconf-dump
-else
-    dconf dump / > .config/dconf-dump
-fi
+cd $HOME/.dotfiles
+
+stow bash gdb htop nvim ranger tmux weechat xdg
+
+dconf load / < dconf-dump
