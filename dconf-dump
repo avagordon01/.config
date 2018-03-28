@@ -143,11 +143,13 @@ shortcuts-enabled=false
 foreground-color='rgb(255,255,255)'
 use-system-font=false
 use-theme-colors=false
-font='Monospace 10'
+font='Monospace 9'
 scrollback-unlimited=true
 scroll-on-keystroke=false
+text-blink-mode='never'
 background-color='rgb(0,0,0)'
 scrollbar-policy='never'
+audible-bell=false
 
 [org/gnome/software]
 check-timestamp=int64 1522175099
