@@ -15,7 +15,7 @@ name='terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Alt>t'
-command='gnome-terminal -- tmux -f .config/tmux'
+command='gnome-terminal -- tmux'
 name='terminal'
 
 [org/gnome/settings-daemon/plugins/xsettings]
