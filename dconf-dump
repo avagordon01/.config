@@ -56,7 +56,7 @@ gtk-theme='Arc-Darker'
 clock-show-date=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-tweaks']
+application-children=['org-gnome-tweaks', 'firefox']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
@@ -64,6 +64,9 @@ application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-tweak-tool]
 application-id='gnome-tweak-tool.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', 'YaST']
@@ -152,7 +155,7 @@ scrollbar-policy='never'
 audible-bell=false
 
 [org/gnome/software]
-check-timestamp=int64 1522175099
+check-timestamp=int64 1522227486
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-right=['<Super>l']
