@@ -15,6 +15,8 @@ set ignorecase
 set smartcase
 set complete=.,w,b,u,t,i,d
 set clipboard=unnamed
+set tags=tags;~
+
 let g:netrw_dirhistmax=0
 set guicursor=
 syntax on
