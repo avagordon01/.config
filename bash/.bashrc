@@ -1,4 +1,3 @@
-set -o vi
 PS1='\[$(tput bold)\]> \[$(tput sgr0)\]'
 alias ls='ls -XF --color=auto'
 alias l='ls -XF --color=auto'
@@ -13,7 +12,8 @@ function run {
 }
 unset HISTFILE
 export VISUAL=nvim
-export EDITOR="$VISUAL"
+export EDITOR=nvim
+export BROWSER=firefox
 . /home/ava/.nix-profile/etc/profile.d/nix.sh
 function nx {
     nix-shell --pure --command "$*"
