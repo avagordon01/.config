@@ -16,6 +16,7 @@ set smartcase
 set complete=.,w,b,u,t,i,d
 set clipboard=unnamed,unnamedplus
 set tags=tags;~
+set inccommand=split
 
 let g:netrw_dirhistmax=0
 set guicursor=
