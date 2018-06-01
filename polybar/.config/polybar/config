@@ -1,0 +1,104 @@
+[colors]
+background = #222
+background-alt = #444
+foreground = #eee
+foreground-alt = #555
+primary = #fb3
+secondary = #e05
+alert = #b34
+
+[bar/main]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 24
+offset-x = 0%
+offset-y = 0%
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = GoHu GoHuFont:pixelsize=14
+
+modules-left =
+modules-center =
+modules-right = backlight-acpi xbacklight wlan eth volume battery date
+
+tray-position = right
+tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;override-redirect = true
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>
+label = scr %percentage%%
+enable-scroll = true
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+enable-scroll = true
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected = wlan %signal%%
+format-disconnected =
+
+[module/eth]
+type = internal/network
+interface = enp0s31f6
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected = eth %local_ip%
+format-disconnected =
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = "%Y-%m-%d "
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+label = %date%%time%
+
+[module/volume]
+type = internal/volume
+
+format-volume = <label-volume>
+label-volume = vol %percentage%%
+label-muted = mute
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = ac <label-charging>
+format-discharging = bat <label-discharging>
+
+[settings]
+screenchange-reload = true
