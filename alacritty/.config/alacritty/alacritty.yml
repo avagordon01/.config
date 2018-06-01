@@ -1,5 +1,5 @@
 env:
-  TERM: xterm
+  TERM: xterm-256color
 
 dpi:
   x: 93.0
@@ -7,18 +7,15 @@ dpi:
 
 tabspaces: 4
 
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 font:
   normal:
-    family: Ubuntu Mono
-    style: Regular
+    family: GoHu GoHuFont
   bold:
-    family: Ubuntu Mono
-    style: Regular
+    family: GoHu GoHuFont
   italic:
-    family: Ubuntu Mono
-    style: Regular
+    family: GoHu GoHuFont
 
   size: 11.0
   offset:
