@@ -108,8 +108,9 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = ac <label-charging>
-format-discharging = bat <label-discharging>
+format-charging = charging <label-charging>
+format-discharging = discharging <label-discharging>
+format-full = charged
 
 [settings]
 screenchange-reload = true
