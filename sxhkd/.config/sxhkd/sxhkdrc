@@ -4,5 +4,3 @@ alt + q
     bspc node focused -c
 alt + m
     bspc desktop --layout next
-alt + {_,shift} + t
-    alacritty {-e tmux,_}
