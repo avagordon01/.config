@@ -1,47 +1,22 @@
 [bar/main]
-enable-ipc = true
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
 height = 20
-offset-x = 0%
-offset-y = 0%
-radius = 0.0
-fixed-center = true
-wm-restack = bspwm
-override-redirect = false
-
 background = #222
 foreground = #eee
-
-padding-left = 0
-padding-right = 1
-
 module-margin-left = 0
 module-margin-right = 1
-
 font-0 = GoHu GoHuFont:pixelsize=14
-
 modules-left = menu
 modules-center = date
 modules-right = xbacklight wlan eth volume battery
-
-tray-position = right
-tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;override-redirect = true
-
 cursor-click = pointer
 cursor-scroll = ns-resize
+wm-restack = bspwm
 
 [module/menu]
 type = custom/menu
-
 label-open = "menu"
 label-close = "menu"
 label-separator = " "
-
 menu-0-0 = terminal
 menu-0-0-exec = alacritty &
 menu-0-1 = browser
@@ -55,25 +30,22 @@ menu-0-4-exec = systemctl suspend
 
 [module/xbacklight]
 type = internal/xbacklight
-
 format = <label>
-label = scr %percentage%%
+label = brightness %percentage%%
 enable-scroll = true
 
 [module/wlan]
 type = internal/network
 interface = wlp2s0
 interval = 3.0
-
 format-connected = <label-connected>
-label-connected = wlan %signal%%
+label-connected = signal %signal%%
 format-disconnected =
 
 [module/eth]
 type = internal/network
 interface = enp0s31f6
 interval = 3.0
-
 format-connected = <label-connected>
 label-connected = eth %local_ip%
 format-disconnected =
@@ -81,20 +53,13 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
-
-date =
-date-alt = "%Y-%m-%d "
-
 time = %H:%M
-time-alt = %H:%M:%S
-
-label = %date%%time%
+label = %time%
 
 [module/volume]
 type = internal/volume
-
 format-volume = <label-volume>
-label-volume = vol %percentage%%
+label-volume = volume %percentage%%
 label-muted = vol mute
 
 [module/battery]
@@ -106,6 +71,3 @@ full-at = 98
 format-charging = charging <label-charging>
 format-discharging = discharging <label-discharging>
 format-full = charged
-
-[settings]
-screenchange-reload = true
