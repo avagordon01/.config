@@ -21,7 +21,7 @@ module-margin-right = 1
 
 font-0 = GoHu GoHuFont:pixelsize=14
 
-modules-left = browser terminal
+modules-left = menu
 modules-center = date
 modules-right = backlight-acpi wlan eth volume battery
 
@@ -35,15 +35,23 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/browser]
-type = custom/text
-content = browser
-click-left = firefox &
+[module/menu]
+type = custom/menu
 
-[module/terminal]
-type = custom/text
-content = terminal
-click-left = alacritty &
+label-open = "menu"
+label-close = "menu"
+label-separator = " "
+
+menu-0-0 = terminal
+menu-0-0-exec = alacritty &
+menu-0-1 = browser
+menu-0-1-exec = firefox &
+menu-0-2 = poweroff
+menu-0-2-exec = systemctl poweroff
+menu-0-3 = reboot
+menu-0-3-exec = systemctl reboot
+menu-0-4 = suspend
+menu-0-4-exec = systemctl suspend
 
 [module/xbacklight]
 type = internal/xbacklight
