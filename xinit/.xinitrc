@@ -9,7 +9,5 @@ feh --bg-scale /usr/share/wallpapers/roverdover-hazy_mountain_sunset.jpg &
 autocutsel -fork &
 autocutsel -fork -selection PRIMARY &
 polybar main &
-firefox &
-alacritty -e tmux &
 sxhkd &
 exec bspwm
