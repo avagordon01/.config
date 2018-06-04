@@ -3,10 +3,11 @@ height = 20
 background = #222
 foreground = #eee
 font-0 = GoHu GoHuFont:pixelsize=14
+font-1 = Material Icons:pixelsize=10;1
 modules-left = menu
-modules-center = date
-modules-right = wlan eth xbacklight volume battery
-separator = " | "
+modules-center =
+modules-right = mpd wlan eth xbacklight volume battery date
+separator = "   "
 cursor-click = pointer
 cursor-scroll = ns-resize
 wm-restack = bspwm
@@ -27,10 +28,24 @@ menu-0-3-exec = systemctl reboot
 menu-0-4 = suspend
 menu-0-4-exec = systemctl suspend
 
+[module/mpd]
+type = internal/mpd
+host = "127.0.0.1"
+port = 6600
+
+format-online = <label-song> <label-time> <icon-prev><toggle><icon-next>
+label-song = %title%
+label-time = %elapsed:5%/%total:5%
+
+icon-play = ""
+icon-pause = ""
+icon-prev = ""
+icon-next = ""
+
 [module/xbacklight]
 type = internal/xbacklight
 format = <label>
-label = brightness %percentage%%
+label = %percentage:3%%
 enable-scroll = true
 
 [module/eth]
@@ -38,31 +53,36 @@ type = internal/network
 interface = enp0s31f6
 interval = 5.0
 format-connected = <label-connected>
-label-connected = %ifname% %upspeed% up %downspeed% down
+label-connected = %linkspeed:3%%
 format-disconnected =
 
 [module/wlan]
 inherit = module/eth
 interface = wlp2s0
+label-connected = %signal:3%%
 
 [module/date]
 type = internal/date
 interval = 5
-time = %H:%M
 label = %time%
+time = %H:%M
 
 [module/volume]
 type = internal/volume
 format-volume = <label-volume>
-label-volume = volume %percentage%%
-label-muted = vol mute
+label-volume = %percentage:3%%
+label-muted = %percentage:3%%
+
 
 [module/battery]
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 98
 
-format-charging = charging <label-charging>
-format-discharging = discharging <label-discharging>
-format-full = charged
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+format-full = <label-full>
+
+label-charging = %percentage:3%%
+label-discharging = %percentage:3%%
+label-full = %percentage:3%%
