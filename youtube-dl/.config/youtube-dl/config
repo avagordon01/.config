@@ -1,0 +1,5 @@
+--download-archive files.txt
+--embed-thumbnail
+--extract-audio
+--audio-format mp3
+-o "~/music/%(playlist)s/%(playlist_index)03d - %(title)s.%(ext)s"
