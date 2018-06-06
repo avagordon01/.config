@@ -1,9 +1,0 @@
-[submodule "gnome-extensions/.local/share/gnome-shell/extensions/hidetopbar@mathieu.bidon.ca"]
-	path = gnome-extensions/.local/share/gnome-shell/extensions/hidetopbar@mathieu.bidon.ca
-	url = https://github.com/mlutfy/hidetopbar.git
-[submodule "gnome-extensions/.local/share/gnome-shell/extensions/no-title-bar@franglais125.gmail.com"]
-	path = gnome-extensions/.local/share/gnome-shell/extensions/no-title-bar@franglais125.gmail.com
-	url = https://github.com/franglais125/no-title-bar.git
-[submodule "gnome-extensions/.local/share/gnome-shell/extensions/nohotcorner@azuri.free.fr"]
-	path = gnome-extensions/.local/share/gnome-shell/extensions/nohotcorner@azuri.free.fr
-	url = https://github.com/HROMANO/nohotcorner.git
