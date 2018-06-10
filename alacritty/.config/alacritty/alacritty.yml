@@ -4,7 +4,7 @@ env:
 tabspaces: 4
 
 font:
-  size: 7.0
+  size: 6.0
   normal:
     family: GoHu GoHuFont
   bold:
