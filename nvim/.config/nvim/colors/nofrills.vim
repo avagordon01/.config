@@ -23,4 +23,4 @@ hi Search       cterm=none  ctermfg=black   ctermbg=cyan
 hi IncSearch    cterm=none  ctermfg=black   ctermbg=cyan
 hi LineNr       cterm=none  ctermfg=darkgrey    ctermbg=none
 hi NonText      cterm=none  ctermfg=darkgrey    ctermbg=none
-hi MatchParen   cterm=reverse  ctermfg=black   ctermbg=blue
+hi MatchParen   cterm=none  ctermfg=black   ctermbg=blue
