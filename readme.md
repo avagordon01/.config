@@ -1,3 +1,10 @@
 # avagordon01s' dotfiles
 
-`git clone https://github.com/avagordon01/.dotfiles && cd .dotfiles && stow */`
+```
+sudo pacman -Syu git &&
+cd $HOME &&
+git clone https://github.com/avagordon01/.dotfiles &&
+cd .dotfiles &&
+sudo pacman -Syu $(cat pkglist.txt) &&
+stow */
+```
