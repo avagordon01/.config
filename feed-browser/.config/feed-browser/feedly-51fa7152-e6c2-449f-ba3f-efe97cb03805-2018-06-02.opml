@@ -2,7 +2,7 @@
 
 <opml version="1.0">
     <head>
-        <title>Ava subscriptions in feedly Cloud</title>
+        <title>subscriptions</title>
     </head>
     <body>
         <outline text="tech" title="tech">
@@ -60,12 +60,12 @@
             <outline type="rss" text="The ryg blog" title="The ryg blog" xmlUrl="http://fgiesen.wordpress.com/feed/" htmlUrl="https://fgiesen.wordpress.com"/>
             <outline type="rss" text="Psychosomatic, Lobotomy, Saw" title="Psychosomatic, Lobotomy, Saw" xmlUrl="http://psy-lob-saw.blogspot.com/feeds/posts/default" htmlUrl="http://psy-lob-saw.blogspot.com/"/>
             <outline type="rss" text="Blobs in Games" title="Blobs in Games" xmlUrl="http://simblob.blogspot.com/feeds/posts/default" htmlUrl="http://simblob.blogspot.com/"/>
+            <outline type="rss" text="fuzzy notepad - blog" title="fuzzy notepad - blog" xmlUrl="https://eev.ee/feeds/blog.atom.xml" htmlUrl="https://eev.ee/blog/"/>
         </outline>
         <outline text="comics" title="comics">
             <outline type="rss" text="Shen Comix" title="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
             <outline type="rss" text="xkcd" title="xkcd" xmlUrl="http://www.xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
             <outline type="rss" text="nedroid" title="nedroid" xmlUrl="http://nedroid.com/feed/" htmlUrl="http://nedroid.com"/>
-            <outline type="rss" text="abstruse goose" title="abstruse goose" xmlUrl="http://abstrusegoose.com/feed" htmlUrl="https://abstrusegoose.com"/>
         </outline>
     </body>
 </opml>
