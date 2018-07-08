@@ -61,6 +61,7 @@
             <outline type="rss" text="Psychosomatic, Lobotomy, Saw" title="Psychosomatic, Lobotomy, Saw" xmlUrl="http://psy-lob-saw.blogspot.com/feeds/posts/default" htmlUrl="http://psy-lob-saw.blogspot.com/"/>
             <outline type="rss" text="Blobs in Games" title="Blobs in Games" xmlUrl="http://simblob.blogspot.com/feeds/posts/default" htmlUrl="http://simblob.blogspot.com/"/>
             <outline type="rss" text="fuzzy notepad - blog" title="fuzzy notepad - blog" xmlUrl="https://eev.ee/feeds/blog.atom.xml" htmlUrl="https://eev.ee/blog/"/>
+            <outline type="rss" text="Purism" title="Purism" xmlUrl="https://puri.sm/feed/" htmlUrl="https://puri.sm/news/"/>
         </outline>
         <outline text="comics" title="comics">
             <outline type="rss" text="Shen Comix" title="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
