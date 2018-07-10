@@ -1,26 +1,25 @@
-set lazyredraw
+set number
 set mouse=a
+set laststatus=0
+
 set viminfo=
 set nobackup
 set noswapfile
-set laststatus=0
-set number
+
+set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
 set autoindent
-set smartindent
 set ignorecase
 set smartcase
-set complete=.,w,b,u,t,i,d
-set clipboard=unnamed,unnamedplus
-set tags=tags;~
 set inccommand=split
+set clipboard=unnamed,unnamedplus
+set complete=.,w,b,u,t,i,d
+set tags=tags;~
 
-let g:netrw_dirhistmax=0
-set guicursor=
 syntax on
 colorscheme nofrills
-map <F1> <del>
-map! <F1> <del>
+
+let loaded_netrwPlugin = 1
+set guicursor=
