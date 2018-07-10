@@ -62,6 +62,8 @@
             <outline type="rss" text="Blobs in Games" title="Blobs in Games" xmlUrl="http://simblob.blogspot.com/feeds/posts/default" htmlUrl="http://simblob.blogspot.com/"/>
             <outline type="rss" text="fuzzy notepad - blog" title="fuzzy notepad - blog" xmlUrl="https://eev.ee/feeds/blog.atom.xml" htmlUrl="https://eev.ee/blog/"/>
             <outline type="rss" text="Purism" title="Purism" xmlUrl="https://puri.sm/feed/" htmlUrl="https://puri.sm/news/"/>
+            <outline type="rss" text="Drew DeVault's Blog" title="Drew DeVault's Blog" xmlUrl="https://drewdevault.com/feed.xml" htmlUrl="https://drewdevault.com/"/>
+            <outline type="rss" text="Tyler Hobbs Art Newsletter Archive Feed" title="Tyler Hobbs Art Newsletter Archive Feed" xmlUrl="https://us9.campaign-archive.com/feed?u=523aa93d4f227c983bdf09efe&amp;id=ee0e56f70d" htmlUrl="http://www.tylerlhobbs.com/writings"/>
         </outline>
         <outline text="comics" title="comics">
             <outline type="rss" text="Shen Comix" title="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
