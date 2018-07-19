@@ -15,7 +15,9 @@
     format = "<b>%s</b> %b"
     word_wrap = yes
 
-    browser = /usr/bin/firefox -new-tab
+    browser = firefox
+    mouse_left_click = do_action
+    mouse_right_click = close_current
 
 [shortcuts]
     close =
