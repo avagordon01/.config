@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="1.0">
-    <head></head>
     <body>
         <outline text="tech">
             <outline type="rss" text="fabiensanglard.net" xmlUrl="http://fabiensanglard.net/rss.xml" htmlUrl="http://fabiensanglard.net"/>
@@ -37,7 +36,6 @@
             <outline type="rss" text="Writing an OS in Rust" xmlUrl="http://blog.phil-opp.com/atom.xml" htmlUrl="https://os.phil-opp.com"/>
             <outline type="rss" text="Paul Khuong: some Lisp" xmlUrl="http://www.pvk.ca/atom.xml" htmlUrl="http://www.pvk.ca/"/>
             <outline type="rss" text="Writing" xmlUrl="http://rachelbythebay.com/w/atom.xml" htmlUrl="http://rachelbythebay.com/w/"/>
-            <outline type="rss" text="shell-storm" xmlUrl="http://shell-storm.org/rss.xml" htmlUrl="http://shell-storm.org"/>
             <outline type="rss" text="Bit Bashing" xmlUrl="http://bitbashing.io/feed.xml" htmlUrl="http://bitbashing.io/"/>
             <outline type="rss" text="I, Cringely" xmlUrl="http://www.cringely.com/feed/" htmlUrl="https://www.cringely.com"/>
             <outline type="rss" text="Embedded in Academia" xmlUrl="http://blog.regehr.org/feed" htmlUrl="https://blog.regehr.org"/>
@@ -58,6 +56,7 @@
             <outline type="rss" text="Purism" xmlUrl="https://puri.sm/feed/" htmlUrl="https://puri.sm/news/"/>
             <outline type="rss" text="Drew DeVault's Blog" xmlUrl="https://drewdevault.com/feed.xml" htmlUrl="https://drewdevault.com/"/>
             <outline type="rss" text="Tyler Hobbs Art Newsletter Archive Feed" xmlUrl="https://us9.campaign-archive.com/feed?u=523aa93d4f227c983bdf09efe&amp;id=ee0e56f70d" htmlUrl="http://www.tylerlhobbs.com/writings"/>
+            <outline type="rss" text="Futures-RS" xmlUrl="https://rust-lang-nursery.github.io/futures-rs/feed.xml" htmlUrl="https://rust-lang-nursery.github.io/futures-rs/"/>
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
