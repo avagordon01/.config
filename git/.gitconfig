@@ -1,0 +1,10 @@
+[user]
+	email = pgavagordon@gmail.com
+	name = Ava Gordon
+[alias]
+    fa = fetch --all
+    drop = !git stash && git stash drop
+[push]
+	default = current
+[fetch]
+	prune = true
