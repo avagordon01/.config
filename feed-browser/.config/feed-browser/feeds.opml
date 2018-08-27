@@ -58,6 +58,7 @@
             <outline type="rss" text="Tyler Hobbs Art Newsletter Archive Feed" xmlUrl="https://us9.campaign-archive.com/feed?u=523aa93d4f227c983bdf09efe&amp;id=ee0e56f70d" htmlUrl="http://www.tylerlhobbs.com/writings"/>
             <outline type="rss" text="Futures-RS" xmlUrl="https://rust-lang-nursery.github.io/futures-rs/feed.xml" htmlUrl="https://rust-lang-nursery.github.io/futures-rs/"/>
             <outline type="rss" text="ds9a.nl articles" xmlUrl="https://ds9a.nl/articles/index.xml" htmlUrl="https://ds9a.nl/articles/"/>
+            <outline type="rss" text="Weekly on Jendrik Illner - 3D Programmer" xmlUrl="https://www.jendrikillner.com/tags/weekly/index.xml" htmlUrl="https://www.jendrikillner.com/tags/weekly/"/>
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
