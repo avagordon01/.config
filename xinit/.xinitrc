@@ -1,3 +1,6 @@
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --auto
+
 xset m 1 0 &
 xinput set-prop "DLL07A9:01 044E:120B" "libinput Tapping Enabled" 1
 setxkbmap gb &
