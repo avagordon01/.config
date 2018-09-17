@@ -62,7 +62,6 @@
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
-            <outline type="rss" text="xkcd" xmlUrl="http://www.xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
             <outline type="rss" text="nedroid" xmlUrl="http://nedroid.com/feed/" htmlUrl="http://nedroid.com"/>
         </outline>
     </body>
