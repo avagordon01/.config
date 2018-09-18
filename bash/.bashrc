@@ -1,3 +1,7 @@
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 PS1='\[$(tput bold)\]> \[$(tput sgr0)\]'
 alias ls='ls -XF --color=auto'
 alias l='ls -XF --color=auto'
