@@ -3,7 +3,7 @@
 	name = Ava Gordon
 [alias]
     fa = fetch --all
-    drop = !git stash && git stash drop
+    drop = reset HEAD --hard
 [push]
 	default = current
 [fetch]
