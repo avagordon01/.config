@@ -1,10 +1,10 @@
 [user]
-	email = pgavagordon@gmail.com
-	name = Ava Gordon
+    email = pgavagordon@gmail.com
+    name = Ava Gordon
 [alias]
     fa = fetch --all
     drop = reset HEAD --hard
 [push]
-	default = current
+    default = current
 [fetch]
-	prune = true
+    prune = true
