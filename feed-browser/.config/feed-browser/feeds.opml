@@ -14,7 +14,6 @@
             <outline type="rss" text="Dan Luu" xmlUrl="http://danluu.com/atom.xml" htmlUrl="http://danluu.com/atom/index.xml"/>
             <outline type="rss" text="Marc Brooker's Blog" xmlUrl="http://brooker.co.za/blog/atom.xml" htmlUrl="http://brooker.co.za/blog/"/>
             <outline type="rss" text="programming is terrible" xmlUrl="http://programmingisterrible.com/rss" htmlUrl="https://programmingisterrible.com/"/>
-            <outline type="rss" text="Stack Overflow Blog" xmlUrl="http://blog.stackoverflow.com/feed/" htmlUrl="https://stackoverflow.blog"/>
             <outline type="rss" text="chrisfenton.com" xmlUrl="http://chrisfenton.com/feed/" htmlUrl="http://www.chrisfenton.com"/>
             <outline type="rss" text="Seena Burns" xmlUrl="http://seenaburns.com/feed.xml" htmlUrl="http://seenaburns.com/"/>
             <outline type="rss" text="Allison Kaptur" xmlUrl="http://akaptur.com/atom.xml" htmlUrl="http://akaptur.github.com/"/>
@@ -26,7 +25,6 @@
             <outline type="rss" text="qqrs.github.com" xmlUrl="http://blog.qqrs.us/atom.xml" htmlUrl="http://qqrs.github.com/"/>
             <outline type="rss" text="eklitzke" xmlUrl="https://eklitzke.org/index.rss" htmlUrl="https://eklitzke.org/"/>
             <outline type="rss" text="Lambda the Ultimate - Programming Languages Weblog" xmlUrl="http://lambda-the-ultimate.org/rss.xml" htmlUrl="http://lambda-the-ultimate.org"/>
-            <outline type="rss" text="GitHub Engineering" xmlUrl="http://githubengineering.com/atom.xml" htmlUrl="https://githubengineering.com/"/>
             <outline type="rss" text="Kamal Marhubi" xmlUrl="http://kamalmarhubi.com/blog/feed.xml" htmlUrl="http://kamalmarhubi.com/"/>
             <outline type="rss" text="Writing an OS in Rust" xmlUrl="https://os.phil-opp.com/rss.xml" htmlUrl="https://os.phil-opp.com"/>
             <outline type="rss" text="0 FPS" xmlUrl="http://0fps.wordpress.com/feed/" htmlUrl="https://0fps.net"/>
@@ -42,7 +40,6 @@
             <outline type="rss" text="Mozilla Hacks – the Web developer blog" xmlUrl="http://hacks.mozilla.org/feed/" htmlUrl="https://hacks.mozilla.org"/>
             <outline type="rss" text="Mary Rose Cook" xmlUrl="https://maryrosecook.com/blog/feed.xml" htmlUrl="https://maryrosecook.com/"/>
             <outline type="rss" text="Julia Evans" xmlUrl="http://jvns.ca/atom.xml" htmlUrl="http://jvns.ca"/>
-            <outline type="rss" text="SoundCloud Backstage Blog" xmlUrl="http://developers.soundcloud.com/blog.rss" htmlUrl="https://developers.soundcloud.com/blog.rss"/>
             <outline type="rss" text="Coding Horror" xmlUrl="http://feeds.feedburner.com/codinghorror/" htmlUrl="https://blog.codinghorror.com/"/>
             <outline type="rss" text="absorptions" xmlUrl="http://www.windytan.com/feeds/posts/default" htmlUrl="http://www.windytan.com/"/>
             <outline type="rss" text="Evan Jones - Software Engineer | Computer Scientist" xmlUrl="http://www.evanjones.ca/index.rss" htmlUrl="http://evanjones.ca/"/>
