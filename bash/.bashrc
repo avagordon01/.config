@@ -25,10 +25,3 @@ shopt -s globstar
 function nx {
     nix-shell --pure --command "$*"
 }
-
-{
-    if [ ! -S "$SSH_AUTH_SOCK" ]; then
-        eval "$(ssh-agent)"
-    fi
-    ssh-add
-} &> /dev/null

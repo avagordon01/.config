@@ -13,6 +13,10 @@ feh --no-fehbg --bg-scale "$(find /usr/share/wallpapers/spotlight -type f | sort
 mpd &
 autocutsel -fork -selection PRIMARY &
 autocutsel -fork -selection CLIPBOARD &
+{
+    eval $(ssh-agent)
+    ssh-add
+} &
 polybar main &
 dunst &
 sxhkd &
