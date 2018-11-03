@@ -57,6 +57,8 @@
             <outline type="rss" text="ds9a.nl articles" xmlUrl="https://ds9a.nl/articles/index.xml" htmlUrl="https://ds9a.nl/articles/"/>
             <outline type="rss" text="Weekly on Jendrik Illner - 3D Programmer" xmlUrl="https://www.jendrikillner.com/tags/weekly/index.xml" htmlUrl="https://www.jendrikillner.com/tags/weekly/"/>
             <outline type="rss" text="🆅🅴🆁🄼🄰🄳🅔🅝" xmlUrl="https://vermaden.wordpress.com/feed/" htmlUrl="https://vermaden.wordpress.com/"/>
+            <outline type="rss" text="justinobeirne.com RSS Feed" xmlUrl="https://www.justinobeirne.com/rss?format=rss" htmlUrl="https://www.justinobeirne.com/"/>
+            <outline type="rss" text="Andreas Writing" xmlUrl="http://beza1e1.tuxen.de/blog_en.atom" htmlUrl="http://beza1e1.tuxen.de/blog_en.html"/>
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
