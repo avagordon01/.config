@@ -16,6 +16,7 @@ function run {
     "$@" &> /dev/null & disown %
 }
 unset HISTFILE
+export LESSHISTFILE=-
 export VISUAL=nvim
 export EDITOR=nvim
 export BROWSER=firefox
