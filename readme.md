@@ -1,4 +1,4 @@
-# avagordon01s' dotfiles
+# avagordon01's dotfiles
 
 ```
 sudo pacman -Syu git
