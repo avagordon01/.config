@@ -59,6 +59,7 @@
             <outline type="rss" text="🆅🅴🆁🄼🄰🄳🅔🅝" xmlUrl="https://vermaden.wordpress.com/feed/" htmlUrl="https://vermaden.wordpress.com/"/>
             <outline type="rss" text="justinobeirne.com RSS Feed" xmlUrl="https://www.justinobeirne.com/rss?format=rss" htmlUrl="https://www.justinobeirne.com/"/>
             <outline type="rss" text="Andreas Writing" xmlUrl="http://beza1e1.tuxen.de/blog_en.atom" htmlUrl="http://beza1e1.tuxen.de/blog_en.html"/>
+            <outline type="rss" text="Standard C++ | Articles &amp; Books" xmlUrl="https://isocpp.org/blog/rss/category/articles-books" htmlUrl="https://isocpp.org/blog/category/articles-books"/>
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
