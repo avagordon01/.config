@@ -1,5 +1,6 @@
 base
 base-devel
+alacritty
 aria2
 bash
 bash-completion
