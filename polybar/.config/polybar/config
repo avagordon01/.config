@@ -55,18 +55,20 @@ format = <label>
 label = brightness %percentage:3%%
 enable-scroll = true
 
+[module/enp]
+type = internal/network
+interface = enp0s20f0u4u4
+label-connected = eth
+
 [module/eth]
 type = internal/network
 interface = enp0s31f6
-interval = 5.0
-format-connected = <label-connected>
-label-connected = eth %linkspeed:3%%
-format-disconnected =
+label-connected = eth
 
 [module/wlan]
 inherit = module/eth
 interface = wlp2s0
-label-connected = wifi %signal:3%%
+label-connected = wifi
 
 [module/date]
 type = internal/date
