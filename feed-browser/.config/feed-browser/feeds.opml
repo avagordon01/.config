@@ -29,7 +29,6 @@
             <outline type="rss" text="Writing an OS in Rust" xmlUrl="https://os.phil-opp.com/rss.xml" htmlUrl="https://os.phil-opp.com"/>
             <outline type="rss" text="0 FPS" xmlUrl="http://0fps.wordpress.com/feed/" htmlUrl="https://0fps.net"/>
             <outline type="rss" text="IT Hare on Soft.ware" xmlUrl="http://ithare.com/feed/" htmlUrl="http://ithare.com"/>
-            <outline type="rss" text="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" htmlUrl="https://www.johndcook.com/blog"/>
             <outline type="rss" text="Aphyr: Posts" xmlUrl="http://aphyr.com/posts.atom" htmlUrl="http://aphyr.com/"/>
             <outline type="rss" text="Writing an OS in Rust" xmlUrl="http://blog.phil-opp.com/atom.xml" htmlUrl="https://os.phil-opp.com"/>
             <outline type="rss" text="Paul Khuong: some Lisp" xmlUrl="http://www.pvk.ca/atom.xml" htmlUrl="http://www.pvk.ca/"/>
