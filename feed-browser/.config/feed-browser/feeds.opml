@@ -60,6 +60,7 @@
             <outline type="rss" text="Andreas Writing" xmlUrl="http://beza1e1.tuxen.de/blog_en.atom" htmlUrl="http://beza1e1.tuxen.de/blog_en.html"/>
             <outline type="rss" text="Standard C++ | Articles &amp; Books" xmlUrl="https://isocpp.org/blog/rss/category/articles-books" htmlUrl="https://isocpp.org/blog/category/articles-books"/>
             <outline type="rss" text="ongoing by Tim Bray" xmlUrl="https://www.tbray.org/ongoing/ongoing.atom" htmlUrl="https://www.tbray.org/ongoing/"/>
+            <outline type="rss" text="withoutblogs" xmlUrl="https://boats.gitlab.io/blog/index.xml" htmlUrl="https://boats.gitlab.io/blog/"/>
         </outline>
         <outline text="comics">
             <outline type="rss" text="Shen Comix" xmlUrl="http://owlturd.com/rss" htmlUrl="http://shencomix.com/"/>
