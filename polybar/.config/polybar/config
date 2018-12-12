@@ -4,7 +4,6 @@ background = #222
 foreground = #eee
 font-0 = GoHu GoHuFont:pixelsize=12
 modules-left = menu
-modules-center = bspwm
 modules-right = mpd wlan eth enp xbacklight volume battery date
 separator = "   "
 cursor-click = pointer
