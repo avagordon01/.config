@@ -1,17 +1,16 @@
-#xrandr --setprovideroutputsource modesetting NVIDIA-0
-#xrandr --auto
-
-xset m 1 0 &
+xinput set-prop "DualPoint Stick" "libinput Accel Profile Enabled" 0, 1 &
 xinput set-prop "DLL07A9:01 044E:120B" "libinput Tapping Enabled" 1 &
-setxkbmap gb &
+localectl set-x11-keymap gb &
 xsetroot -cursor_name left_ptr &
-xset s 300 300 &
 xset r rate 250 30 &
+xset -dmps &
+xset s on &
+xset s noexpose &
+xset s blank &
+xset s 300 &
 xss-lock -- physlock &
-#feh --bg-scale /usr/share/wallpapers/deepin/Sunrise_by_Alexandre_Godreau.jpg &
-#feh --bg-scale /usr/share/wallpapers/roverdover-hazy_mountain_sunset.jpg &
 feh --no-fehbg --bg-scale "$(find /usr/share/wallpapers/spotlight -type f | sort -R | head -1)" &
-mpd --no-daemon &
+#mpd --no-daemon &
 autocutsel -selection PRIMARY &
 autocutsel -selection CLIPBOARD &
 {
