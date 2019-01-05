@@ -13,6 +13,7 @@ alias we='watchexec -c -d 0'
 alias grep='grep --color=auto'
 alias diff='diff --color=always'
 alias aria2c='aria2c --summary-interval=0'
+alias gdb='gdb -quiet'
 function run {
     "$@" &> /dev/null & disown %
 }
