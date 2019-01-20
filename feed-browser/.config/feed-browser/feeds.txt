@@ -60,3 +60,4 @@ https://boats.gitlab.io/blog/index.xml
 http://owlturd.com/rss
 http://nedroid.com/feed/
 http://www.brendangregg.com/blog/rss.xml
+https://futhark-lang.org/atom.xml
