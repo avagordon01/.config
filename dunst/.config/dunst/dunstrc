@@ -1,6 +1,6 @@
 [global]
     monitor = 0
-    geometry = "300x5-0+16"
+    geometry = "300x5-0+12"
     idle_threshold = 120
 
     padding = 8
