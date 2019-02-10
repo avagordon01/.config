@@ -51,7 +51,6 @@ https://us9.campaign-archive.com/feed?u=523aa93d4f227c983bdf09efe&amp;id=ee0e56f
 https://rust-lang-nursery.github.io/futures-rs/feed.xml
 https://ds9a.nl/articles/index.xml
 https://www.jendrikillner.com/tags/weekly/index.xml
-https://vermaden.wordpress.com/feed/
 https://www.justinobeirne.com/rss?format=rss
 http://beza1e1.tuxen.de/blog_en.atom
 https://isocpp.org/blog/rss/category/articles-books
@@ -61,3 +60,5 @@ http://owlturd.com/rss
 http://nedroid.com/feed/
 http://www.brendangregg.com/blog/rss.xml
 https://futhark-lang.org/atom.xml
+https://wordsandbuttons.online/rss
+https://vittorioromeo.info/index.rss
