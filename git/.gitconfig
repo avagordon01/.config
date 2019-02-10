@@ -2,8 +2,9 @@
     email = pgavagordon@gmail.com
     name = Ava Gordon
 [alias]
-    fa = fetch --all
+    fa = fetch --all --prune --tags --prune-tags
     drop = reset HEAD --hard
+    goa = log --graph --oneline --all
 [push]
     default = current
 [fetch]
