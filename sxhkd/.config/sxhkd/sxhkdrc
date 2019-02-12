@@ -5,7 +5,7 @@ alt + q
 alt + m
     bspc desktop --layout next
 alt + l
-    physlock
+    systemctl suspend
 alt + shift + t
     alacritty
 alt + b
