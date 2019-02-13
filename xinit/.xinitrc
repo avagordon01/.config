@@ -15,7 +15,7 @@ autocutsel -selection CLIPBOARD &
     eval $(ssh-agent)
     ssh-add
 } &
-polybar main &
+polybar -r main &
 dunst &
 sxhkd &
 exec bspwm
