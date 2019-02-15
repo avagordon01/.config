@@ -23,3 +23,5 @@ colorscheme nofrills
 
 let loaded_netrwPlugin = 1
 set guicursor=
+
+set matchpairs+=<:>
