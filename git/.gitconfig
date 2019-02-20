@@ -9,3 +9,5 @@
     default = current
 [fetch]
     prune = true
+[diff]
+    algorithm = histogram
