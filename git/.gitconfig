@@ -5,6 +5,8 @@
     fa = fetch --all --prune --tags --prune-tags
     drop = reset HEAD --hard
     goa = log --graph --oneline --all
+    shad = describe --match --no-match --always --abbrev --dirty
+    sha = rev-parse --short HEAD
 [push]
     default = current
 [fetch]
