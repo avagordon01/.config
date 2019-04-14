@@ -65,3 +65,4 @@ https://vittorioromeo.info/index.rss
 https://rehn.me/feed.xml
 https://limpet.net/mbrubeck/atom.xml
 http://yosefk.com/blog/feed
+https://bost.ocks.org/mike/index.rss
