@@ -24,5 +24,4 @@ stow
 sxhkd
 tmux
 xsel
-xorg-xprop
 xorg-xinit

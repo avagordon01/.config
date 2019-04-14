@@ -44,9 +44,6 @@ colors:
     cyan:       '0x34e2e2'
     white:      '0xeeeeec'
 
-visual_bell:
-  duration: 0
-
 mouse_bindings:
   - { mouse: Middle, action: Paste }
 
