@@ -40,7 +40,7 @@ http://www.windytan.com/feeds/posts/default
 http://www.evanjones.ca/index.rss
 http://bitsquid.blogspot.com/feeds/posts/default
 http://feeds.feedburner.com/ItWillNeverWorkInTheory
-http://250bpm.com/feed/pages/pagename/start/category/blog/t/250bpm-blogs/h/http%3A%2F%2Fwww.250bpm.com%2Fblog
+http://250bpm.com/feed/pages
 http://fgiesen.wordpress.com/feed/
 http://psy-lob-saw.blogspot.com/feeds/posts/default
 http://simblob.blogspot.com/feeds/posts/default
@@ -66,3 +66,4 @@ https://rehn.me/feed.xml
 https://limpet.net/mbrubeck/atom.xml
 http://yosefk.com/blog/feed
 https://bost.ocks.org/mike/index.rss
+https://blog.cloudflare.com/rss/
