@@ -7,7 +7,9 @@
     goa = log --graph --oneline --all
     shad = describe --match --no-match --always --abbrev --dirty
     sha = rev-parse --short HEAD
-    rb = !git rebase -i $(git merge-base develop HEAD)
+    bp = merge-base develop HEAD
+    br = !git rebase -i $(git bp)
+    bd = !git diff $(git bp)
 [push]
     default = current
 [fetch]
