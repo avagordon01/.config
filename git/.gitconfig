@@ -5,6 +5,7 @@
     fa = fetch --all --prune --tags --prune-tags
     drop = reset HEAD --hard
     goa = log --graph --oneline --all
+    go = log --graph --oneline
     shad = describe --match --no-match --always --abbrev --dirty
     sha = rev-parse --short HEAD
     bp = merge-base develop HEAD
@@ -18,3 +19,5 @@
     algorithm = histogram
 [submodule]
 	recurse = true
+[merge]
+	conflictstyle = diff3
