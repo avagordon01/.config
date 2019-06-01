@@ -70,3 +70,4 @@ https://blog.cloudflare.com/rss/
 https://blog.icare3d.org/feeds/posts/default
 http://antirez.com/rss
 https://lemire.me/blog/feed/
+https://inconvergent.net/atom.xml
