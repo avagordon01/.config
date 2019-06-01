@@ -25,3 +25,8 @@ let loaded_netrwPlugin = 1
 set guicursor=
 
 set matchpairs+=<:>
+
+noremap <MiddleMouse> <LeftMouse>
+noremap <2-MiddleMouse> <LeftMouse>
+noremap <3-MiddleMouse> <LeftMouse>
+noremap <4-MiddleMouse> <LeftMouse>
