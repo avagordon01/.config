@@ -10,3 +10,5 @@ alt + shift + t
     alacritty
 alt + b
     firefox
+alt + r
+    ~/.dotfiles/reset.sh
