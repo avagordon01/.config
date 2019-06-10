@@ -33,3 +33,24 @@ shopt -s globstar
 function nx {
     nix-shell --pure --command "$*"
 }
+
+function bulk {
+    set -eu pipefail
+
+    command="mv -vi --"
+
+    tmp0=$(mktemp)
+    tmp1=$(mktemp)
+    script=$(mktemp)
+
+    cp /dev/stdin ${tmp0}
+    cp ${tmp0} ${tmp1}
+
+    $EDITOR ${tmp1}
+    #TODO handle spaces in filenames
+    paste -d ' ' ${tmp0} ${tmp1} | sed -e "s/^/${command} /" > ${script}
+    $EDITOR ${script}
+    sh ${script}
+
+    rm -rf ${tmp0} ${tmp1} ${script}
+}
