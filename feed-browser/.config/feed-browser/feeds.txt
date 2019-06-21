@@ -66,7 +66,6 @@ https://rehn.me/feed.xml
 https://limpet.net/mbrubeck/atom.xml
 http://yosefk.com/blog/feed
 https://bost.ocks.org/mike/index.rss
-https://blog.cloudflare.com/rss/
 https://blog.icare3d.org/feeds/posts/default
 http://antirez.com/rss
 https://lemire.me/blog/feed/
