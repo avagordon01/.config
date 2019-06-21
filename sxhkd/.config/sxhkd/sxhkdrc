@@ -2,6 +2,8 @@ alt + {_,shift} + Tab
     bspc node {next,prev} -f
 alt + q
     bspc node focused -c
+alt + shift + q
+    bspc quit
 alt + m
     bspc desktop --layout next
 alt + l
