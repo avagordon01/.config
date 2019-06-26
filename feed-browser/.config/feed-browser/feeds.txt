@@ -71,3 +71,5 @@ http://antirez.com/rss
 https://lemire.me/blog/feed/
 https://inconvergent.net/atom.xml
 http://www.duskborn.com/index.xml
+https://people.kernel.org/read/feed/
+https://www.jessicayung.com/feed/
