@@ -16,4 +16,6 @@ feh --no-fehbg --bg-scale "$(find /usr/share/wallpapers/spotlight -type f | sort
 polybar -r main &
 dunst &
 sxhkd &
+firefox &
+alacritty &
 exec bspwm
