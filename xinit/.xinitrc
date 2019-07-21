@@ -4,7 +4,7 @@ xinput set-prop 13 "libinput Disable While Typing Enabled" 0 &
 xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1
 localectl set-x11-keymap gb &
 xsetroot -cursor_name left_ptr &
-xset r rate 250 30 &
+xset r rate 200 30 &
 xset -dmps &
 xset s on &
 xset s 600 &
