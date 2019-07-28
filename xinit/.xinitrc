@@ -9,7 +9,7 @@ xset -dmps &
 xset s on &
 xset s 600 &
 xss-lock -- systemctl suspend &
-feh --no-fehbg --bg-scale "$(find /usr/share/wallpapers/spotlight -type f | sort -R | head -1)" &
+feh --no-fehbg --bg-fill "$(find /usr/share/wallpapers/spotlight -type f | sort -R | head -1)" &
 #mpd --no-daemon &
 {
     eval $(ssh-agent)
