@@ -76,3 +76,6 @@ https://www.jessicayung.com/feed/
 https://www.anmolsarma.in/index.xml
 http://thume.ca/atom.xml
 https://andrewkelley.me/rss.xml
+https://travisdowns.github.io/feed.xml
+https://ourmachinery.com/index.xml
+https://raphlinus.github.io/feed.xml
