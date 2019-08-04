@@ -21,6 +21,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+alias gdb='gdb -q'
 
 function run {
     "$@" &> /dev/null & disown %
