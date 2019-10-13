@@ -13,6 +13,7 @@
     br = !git rebase -i $(git bp)
     bd = !git diff $(git bp)
     s = status
+    d = diff
     c = commit -m
 [push]
     default = current
