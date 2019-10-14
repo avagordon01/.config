@@ -26,6 +26,7 @@ alias gdb='gdb -q'
 function run {
     "$@" &> /dev/null & disown %
 }
+complete -F _command run
 
 unset HISTFILE
 export LESSHISTFILE=-
