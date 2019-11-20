@@ -35,3 +35,17 @@ export EDITOR=nvim
 export BROWSER=firefox
 
 if [ -e /home/ava/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ava/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+_xcut() {
+    echo "${READLINE_LINE}" | xsel -ib
+    READLINE_LINE=""
+}
+_xcopy() {
+    echo "${READLINE_LINE}" | xsel -ib
+}
+_xpaste() {
+    READLINE_LINE="$(xsel -ob)"
+}
+bind -m vi -x '"dd": _xcut'
+bind -m vi -x '"yy": _xcopy'
+bind -m vi -x '"p": _xpaste'
