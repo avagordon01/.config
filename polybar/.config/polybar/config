@@ -75,7 +75,7 @@ type = internal/pulseaudio
 format-volume = <label-volume>
 label-volume = volume %percentage:3%%
 label-muted = muted  %percentage:3%%
-
+interval = 1
 
 [module/battery]
 type = internal/battery
