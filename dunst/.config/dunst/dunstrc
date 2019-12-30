@@ -10,7 +10,7 @@
     separator_color = frame
     sort = no
 
-    font = Noto Sans 9
+    font = Misc Tamsyn 9
     markup = full
     format = "<b>%s</b>\n%b"
     word_wrap = yes
