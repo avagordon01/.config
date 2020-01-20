@@ -13,4 +13,4 @@ alt + shift + t
 alt + b
     firefox
 alt + r
-    ~/.dotfiles/reset.sh
+    ~/scripts/reset.sh

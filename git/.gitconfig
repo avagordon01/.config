@@ -9,7 +9,7 @@
     ga = log --graph --all
     shad = describe --match --no-match --always --abbrev --dirty
     sha = rev-parse --short HEAD
-    bp = merge-base develop HEAD
+    bp = !git merge-base develop HEAD || git merge-base master HEAD
     br = !git rebase -i $(git bp)
     bd = !git diff $(git bp)
     s = status

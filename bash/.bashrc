@@ -8,6 +8,7 @@ alias ls='ls -XF --color=auto'
 alias l='ls -XF --color=auto'
 alias ll='ls -XFl --color=auto'
 alias t='tree -FC'
+alias td='tree -FCd'
 alias tt='tree -FCpugh'
 alias ff='$BROWSER'
 alias p='pwd'
@@ -36,6 +37,15 @@ export BROWSER=firefox
 
 if [ -e /home/ava/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ava/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+{
+    if [ -z "$SSH_AUTH_SOCK" ]; then
+        eval $(ssh-agent)
+        ssh-add ~/.ssh/id_rsa
+    fi
+} &> /dev/null
+
+source ~/.nix-profile/etc/profile.d/nix.sh
+
 _xcut() {
     echo "${READLINE_LINE}" | xsel -ib
     READLINE_LINE=""
@@ -49,3 +59,5 @@ _xpaste() {
 bind -m vi -x '"dd": _xcut'
 bind -m vi -x '"yy": _xcopy'
 bind -m vi -x '"p": _xpaste'
+
+alias nx='nix-shell --option sandbox relaxed'

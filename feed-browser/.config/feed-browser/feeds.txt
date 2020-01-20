@@ -10,7 +10,6 @@ http://www.joelonsoftware.com/rss.xml
 http://danluu.com/atom.xml
 http://brooker.co.za/blog/atom.xml
 http://programmingisterrible.com/rss
-http://chrisfenton.com/feed/
 http://seenaburns.com/feed.xml
 http://akaptur.com/atom.xml
 http://steve-yegge.blogspot.com/feeds/posts/default
@@ -79,3 +78,6 @@ https://andrewkelley.me/rss.xml
 https://travisdowns.github.io/feed.xml
 https://ourmachinery.com/index.xml
 https://raphlinus.github.io/feed.xml
+https://easyperf.net/feed.xml
+https://blog.ncase.me/rss/
+https://herbsutter.com/feed/

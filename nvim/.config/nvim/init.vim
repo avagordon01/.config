@@ -30,3 +30,19 @@ noremap <MiddleMouse> <LeftMouse>
 noremap <2-MiddleMouse> <LeftMouse>
 noremap <3-MiddleMouse> <LeftMouse>
 noremap <4-MiddleMouse> <LeftMouse>
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'neovim/nvim-lsp'
+call plug#end()
+
+"call nvim_lsp#setup("ccls", {'cmd': [
+"\ 'ccls', '--init={"compilationDatabaseDirectory":"build"}',
+"\ ]})
+
+autocmd Filetype rust,python,go,c,cpp setl omnifunc=lsp#omnifunc
+nnoremap <silent> ;dc :call lsp#text_document_declaration()<CR>
+nnoremap <silent> ;df :call lsp#text_document_definition()<CR>
+nnoremap <silent> ;h  :call lsp#text_document_hover()<CR>
+nnoremap <silent> ;i  :call lsp#text_document_implementation()<CR>
+nnoremap <silent> ;s  :call lsp#text_document_signature_help()<CR>
+nnoremap <silent> ;td :call lsp#text_document_type_definition()<CR>
