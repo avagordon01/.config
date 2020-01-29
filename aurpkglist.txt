@@ -1,0 +1,4 @@
+yay
+polybar
+tamsyn-font-otb
+vim-plug

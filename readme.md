@@ -7,4 +7,5 @@ git clone --recurse-submodules https://github.com/avagordon01/.dotfiles
 cd .dotfiles
 sudo pacman -Syu $(cat pkglist.txt)
 stow */
+yay -S $(cat aurpkglist.txt)
 ```
