@@ -17,7 +17,6 @@ mpv
 neovim
 netpbm
 openssh
-polybar
 pwgen
 ranger
 stow
@@ -25,3 +24,14 @@ sxhkd
 tmux
 xsel
 xorg-xinit
+xorg-server
+xorg-xrandr
+xorg-xset
+xorg-xsetroot
+xorg-xbacklight
+xorg-xinput
+pulseaudio
+ripgrep
+fd
+physlock
+tree
