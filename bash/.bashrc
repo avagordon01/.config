@@ -16,12 +16,6 @@ alias r='ranger'
 alias v='nvim'
 alias c='history -c; tmux clear-history; clear'
 alias we='watchexec -c -d 10'
-alias loop='while true; do fc -s; sleep 1; done'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
 alias gdb='gdb -q'
 
 function run {
@@ -36,15 +30,6 @@ export EDITOR=nvim
 export BROWSER=firefox
 
 if [ -e /home/ava/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ava/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-{
-    if [ -z "$SSH_AUTH_SOCK" ]; then
-        eval $(ssh-agent)
-        ssh-add ~/.ssh/id_rsa
-    fi
-} &> /dev/null
-
-source ~/.nix-profile/etc/profile.d/nix.sh
 
 _xcut() {
     echo "${READLINE_LINE}" | xsel -ib
