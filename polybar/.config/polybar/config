@@ -4,7 +4,7 @@ background = #222
 foreground = #eee
 font-0 = Misc Tamsyn:pixelsize=11
 modules-left = menu
-modules-right = wlan eth xbacklight volume battery date
+modules-right = wlan eth0 eth1 xbacklight volume battery date
 separator = "   "
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -54,13 +54,18 @@ format = <label>
 label = brightness %percentage:3%%
 enable-scroll = true
 
-[module/eth]
+[module/eth0]
+type = internal/network
+interface = enp0s31f6
+label-connected = eth
+
+[module/eth1]
 type = internal/network
 interface = enp0s20f0u5u1
 label-connected = eth
 
 [module/wlan]
-inherit = module/eth
+type = internal/network
 interface = wlp2s0
 label-connected = wifi
 
