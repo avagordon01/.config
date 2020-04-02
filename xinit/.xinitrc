@@ -1,7 +1,6 @@
 xinput set-prop "DualPoint Stick" "libinput Accel Profile Enabled" 0, 1 &
 xinput set-prop "DLL07A9:01 044E:120B" "libinput Tapping Enabled" 1 &
-xinput set-prop 13 "libinput Disable While Typing Enabled" 0 &
-xinput --set-prop 22 'libinput Accel Profile Enabled' 0, 1
+xinput set-prop "DLL07A9:01 044E:120B" "libinput Disable While Typing Enabled" 0 &
 localectl set-x11-keymap gb &
 xsetroot -cursor_name left_ptr &
 xset r rate 200 30 &
