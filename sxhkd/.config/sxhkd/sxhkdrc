@@ -14,3 +14,9 @@ alt + b
     firefox
 alt + r
     ~/scripts/reset.sh
+Print
+    scrot
+shift + Print
+    scrot -u
+alt + Print
+    pkill recordmydesktop || recordmydesktop -o "$(date -Iseconds).ogv"
