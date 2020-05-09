@@ -22,6 +22,7 @@ function run {
     "$@" &> /dev/null & disown %
 }
 complete -F _command run
+complete -F _command prime-run
 
 unset HISTFILE
 export LESSHISTFILE=-
