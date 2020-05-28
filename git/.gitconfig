@@ -22,6 +22,6 @@
 [diff]
     algorithm = histogram
 [submodule]
-	recurse = true
+    recurse = true
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
