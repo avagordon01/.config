@@ -3,7 +3,6 @@ https://nomasters.io/index.xml
 https://manybutfinite.com/feed.xml
 http://nullprogram.com/feed/
 http://eli.thegreenplace.net/feed/
-http://zedshaw.com/feed/
 https://idea.popcount.org/rss.xml
 http://www.archlinux.org/feeds/news/
 http://www.joelonsoftware.com/rss.xml
@@ -25,7 +24,6 @@ https://os.phil-opp.com/rss.xml
 http://0fps.wordpress.com/feed/
 http://ithare.com/feed/
 http://aphyr.com/posts.atom
-http://blog.phil-opp.com/atom.xml
 http://www.pvk.ca/atom.xml
 http://rachelbythebay.com/w/atom.xml
 http://bitbashing.io/feed.xml
@@ -38,7 +36,7 @@ http://www.windytan.com/feeds/posts/default
 http://www.evanjones.ca/index.rss
 http://bitsquid.blogspot.com/feeds/posts/default
 http://feeds.feedburner.com/ItWillNeverWorkInTheory
-http://250bpm.com/feed/pages
+http://250bpm.com/feed/pages/
 http://fgiesen.wordpress.com/feed/
 http://psy-lob-saw.blogspot.com/feeds/posts/default
 http://simblob.blogspot.com/feeds/posts/default
@@ -46,13 +44,12 @@ https://eev.ee/feeds/blog.atom.xml
 https://puri.sm/feed/
 https://drewdevault.com/feed.xml
 https://us9.campaign-archive.com/feed?u=523aa93d4f227c983bdf09efe&amp;id=ee0e56f70d
-https://rust-lang-nursery.github.io/futures-rs/feed.xml
+https://rust-lang.github.io/futures-rs/feed.xml
 https://www.jendrikillner.com/tags/weekly/index.xml
 https://www.justinobeirne.com/rss?format=rss
 http://beza1e1.tuxen.de/blog_en.atom
 https://isocpp.org/blog/rss/category/articles-books
 https://boats.gitlab.io/blog/index.xml
-http://owlturd.com/rss
 http://nedroid.com/feed/
 http://www.brendangregg.com/blog/rss.xml
 https://futhark-lang.org/atom.xml
@@ -78,3 +75,6 @@ https://raphlinus.github.io/feed.xml
 https://easyperf.net/feed.xml
 https://blog.ncase.me/rss/
 https://herbsutter.com/feed/
+https://stjepang.github.io/feed.xml
+http://www.jemarch.net/pokology.xml
+https://raymii.org/s/feed.xml
