@@ -8,7 +8,7 @@ window:
   dynamic_padding: false
 
 font:
-  size: 6
+  size: 7
   normal:
     family: Misc Tamsyn
   bold:
