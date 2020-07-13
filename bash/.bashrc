@@ -20,6 +20,9 @@ alias v='nvim'
 alias c='history -c; tmux clear-history; clear'
 alias we='watchexec -c -d 10'
 alias gdb='gdb -q'
+alias xcopy='xsel -ib'
+alias xpaste='xsel -ob'
+alias xclear='xsel -cb'
 
 function run {
     "$@" &> /dev/null & disown %
