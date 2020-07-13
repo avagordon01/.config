@@ -19,4 +19,4 @@ Print
 shift + Print
     scrot -u
 alt + Print
-    pkill recordmydesktop || recordmydesktop -o "$(date -Iseconds).ogv"
+    pkill recordmydesktop || (recordmydesktop -o "$(date -Iseconds).ogv" && notify-send "recording done")
