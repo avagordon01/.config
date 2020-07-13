@@ -49,7 +49,7 @@ https://www.jendrikillner.com/tags/weekly/index.xml
 https://www.justinobeirne.com/rss?format=rss
 http://beza1e1.tuxen.de/blog_en.atom
 https://isocpp.org/blog/rss/category/articles-books
-https://boats.gitlab.io/blog/index.xml
+https://without.boats/index.xml
 http://nedroid.com/feed/
 http://www.brendangregg.com/blog/rss.xml
 https://futhark-lang.org/atom.xml
@@ -78,3 +78,6 @@ https://herbsutter.com/feed/
 https://stjepang.github.io/feed.xml
 http://www.jemarch.net/pokology.xml
 https://raymii.org/s/feed.xml
+https://www.windytan.com/feeds/posts/default
+http://smallcultfollowing.com/babysteps/atom.xml
+http://pcwalton.github.io/feed.xml
