@@ -1,5 +1,5 @@
 alt + {_,shift} + Tab
-    bspc node {next,prev} -f
+    bspc node {next,prev}.window -f
 alt + q
     bspc node focused -c
 alt + shift + q
