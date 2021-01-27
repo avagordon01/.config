@@ -17,6 +17,7 @@ mpv
 neovim
 netpbm
 openssh
+playerctl
 pwgen
 ranger
 stow
@@ -33,5 +34,4 @@ xorg-xinput
 pulseaudio
 ripgrep
 fd
-physlock
 tree

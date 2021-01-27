@@ -84,3 +84,4 @@ https://www.ecorax.net/rss.xml
 https://mango.pdf.zone/feed.xml
 https://foonathan.net/post/feed.xml
 https://blog.dshr.org/feeds/posts/default
+https://scattered-thoughts.net/atom.xml

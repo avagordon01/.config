@@ -23,6 +23,7 @@ alias gdb='gdb -q'
 alias xcopy='xsel -ib'
 alias xpaste='xsel -ob'
 alias xclear='xsel -cb'
+alias nping='ping -f -i 0.2 1.1.1.1'
 
 function run {
     "$@" &> /dev/null & disown %
@@ -35,8 +36,6 @@ export LESSHISTFILE=-
 export VISUAL=nvim
 export EDITOR=nvim
 export BROWSER=firefox
-
-if [ -e /home/ava/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ava/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 _xcut() {
     echo "${READLINE_LINE}" | xsel -ib
@@ -51,5 +50,7 @@ _xpaste() {
 bind -m vi -x '"dd": _xcut'
 bind -m vi -x '"yy": _xcopy'
 bind -m vi -x '"p": _xpaste'
+
+if [ -e /home/ava/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ava/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 alias nx='nix-shell --option sandbox relaxed'

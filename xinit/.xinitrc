@@ -6,8 +6,8 @@ xsetroot -cursor_name left_ptr &
 xset r rate 200 30 &
 xset -dmps &
 xset s on &
-xset s 600 &
-xss-lock -- systemctl suspend &
+xset s 3600 &
+#xss-lock -- systemctl suspend &
 feh --no-fehbg --bg-fill "$(find /usr/share/wallpapers/mojave -type f | sort -R | head -1)" &
 #mpd --no-daemon &
 {
@@ -17,6 +17,6 @@ feh --no-fehbg --bg-fill "$(find /usr/share/wallpapers/mojave -type f | sort -R 
 polybar -r main &
 dunst &
 sxhkd &
-firefox &
+#firefox &
 alacritty &
 exec bspwm
