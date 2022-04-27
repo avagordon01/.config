@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+#sudo pacman -S bluez bluez-utils pulseaudio-bluetooth
+
 sudo systemctl start bluetooth.service
 bluetoothctl power on
 bluetoothctl devices

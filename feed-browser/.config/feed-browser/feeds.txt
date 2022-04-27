@@ -53,7 +53,6 @@ http://www.brendangregg.com/blog/rss.xml
 https://futhark-lang.org/atom.xml
 https://wordsandbuttons.online/rss
 https://vittorioromeo.info/index.rss
-https://rehn.me/feed.xml
 https://limpet.net/mbrubeck/atom.xml
 http://yosefk.com/blog/feed
 https://bost.ocks.org/mike/index.rss

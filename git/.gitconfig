@@ -10,9 +10,9 @@
     ga = log --graph --all
     shad = describe --match --no-match --always --abbrev --dirty
     sha = rev-parse --short HEAD
-    bp = !git merge-base develop HEAD || git merge-base master HEAD
-    br = !git rebase -i $(git bp)
-    bd = !git diff $(git bp)
+    bp = "!f() { git merge-base develop $1 || git merge-base master $1 || git merge-base main $1; }; f"
+    br = !git rebase -i $(git bp HEAD)
+    bd = "!f() { git diff $(git bp $1); }; f"
     s = status
     d = diff
     c = commit -m
@@ -23,8 +23,8 @@
     prune = true
 [diff]
     algorithm = histogram
-#[submodule]
-    #recurse = true
+[submodule]
+    recurse = true
 [merge]
     conflictstyle = diff3
 [pull]
@@ -34,3 +34,5 @@
     required = true
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main

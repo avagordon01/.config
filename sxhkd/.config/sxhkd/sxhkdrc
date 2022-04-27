@@ -22,3 +22,5 @@ alt + Print
     pkill recordmydesktop || (recordmydesktop -o "$(date -Iseconds).ogv" && notify-send "recording done")
 alt + {p,bracketleft,bracketright}
     playerctl {play-pause,previous,next}
+alt + n
+    bspc node -t ~fullscreen

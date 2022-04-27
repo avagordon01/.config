@@ -9,10 +9,10 @@ hi MatchParen   cterm=none  ctermfg=black   ctermbg=blue
 hi Search       cterm=none  ctermfg=black   ctermbg=cyan
 hi IncSearch    cterm=none  ctermfg=black   ctermbg=cyan
 
-hi LineNr       cterm=none  ctermfg=darkgrey ctermbg=none
-hi NonText      cterm=none  ctermfg=darkgrey ctermbg=none
+hi LineNr       cterm=none  ctermfg=grey    ctermbg=none
+hi NonText      cterm=none  ctermfg=grey    ctermbg=none
 
-hi Comment      cterm=none  ctermfg=darkgrey ctermbg=none
+hi Comment      cterm=none  ctermfg=grey    ctermbg=none
 hi Constant     cterm=none  ctermfg=white   ctermbg=none
 hi String       cterm=none  ctermfg=green   ctermbg=none
 hi Character    cterm=none  ctermfg=green   ctermbg=none

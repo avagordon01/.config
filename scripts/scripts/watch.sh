@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-minidlnad
+#minidlnad
+
+run kodi

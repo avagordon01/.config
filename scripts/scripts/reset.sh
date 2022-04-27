@@ -8,9 +8,11 @@ xrandr --auto
 pulseaudio -k
 pactl set-card-profile 0 "output:analog-stereo+input:analog-stereo"
 
-pkill polybar
-polybar -r main &
-disown %
+bspc wm -r
+
+#pkill polybar
+#polybar -r main &
+#disown %
 
 notify-send DUNST_COMMAND_RESUME
 

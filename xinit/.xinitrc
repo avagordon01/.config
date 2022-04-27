@@ -1,22 +1,22 @@
-xinput set-prop "DualPoint Stick" "libinput Accel Profile Enabled" 0, 1 &
-xinput set-prop "DLL07A9:01 044E:120B" "libinput Tapping Enabled" 1 &
-xinput set-prop "DLL07A9:01 044E:120B" "libinput Disable While Typing Enabled" 0 &
+#xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Accel Profile Enabled" 0, 2 &
+xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1 &
+xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Disable While Typing Enabled" 0 &
 localectl set-x11-keymap gb &
-xsetroot -cursor_name left_ptr &
 xset r rate 200 30 &
-xset -dmps &
-xset s on &
-xset s 3600 &
-#xss-lock -- systemctl suspend &
-feh --no-fehbg --bg-fill "$(find /usr/share/wallpapers/mojave -type f | sort -R | head -1)" &
-#mpd --no-daemon &
+xrandr --output DP1 --same-as eDP1
+xrandr --output eDP1 --brightness 0.5
+xrandr --output eDP1 --scale 0.5x0.5 --filter nearest
+xrandr --output DP1 --scale 1x1
+xsetroot -cursor_name left_ptr &
+xss-lock -- systemctl suspend &
+xset s 600 600
 {
     eval $(ssh-agent)
     ssh-add
 } &
+gnome-keyring-daemon &
 polybar -r main &
 dunst &
 sxhkd &
-#firefox &
-alacritty &
+firefox &
 exec bspwm

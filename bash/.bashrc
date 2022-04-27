@@ -2,10 +2,7 @@ if command -v tmux>/dev/null; then
     [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
 fi
 
-bottom="\[$(tput cup $(tput lines) 0)\]"
-bold="\[$(tput bold)\]"
-reset="\[$(tput sgr0)\]"
-PS1="${bottom}${bold}> ${reset}"
+PS1='\[$(tput cup $((${LINES}-1)))$(tput bold)\]> \[$(tput sgr0)\]'
 
 alias ls='ls -XF --color=auto'
 alias l='ls -XF --color=auto'
