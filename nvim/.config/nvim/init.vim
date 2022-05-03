@@ -30,7 +30,3 @@ noremap <MiddleMouse> <LeftMouse>
 noremap <2-MiddleMouse> <LeftMouse>
 noremap <3-MiddleMouse> <LeftMouse>
 noremap <4-MiddleMouse> <LeftMouse>
-
-call plug#begin('~/.config/nvim/plugged')
-Plug 'editorconfig/editorconfig-vim'
-call plug#end()
