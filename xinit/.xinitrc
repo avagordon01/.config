@@ -4,18 +4,19 @@ xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Tapping Enabled" 1 &
 xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Disable While Typing Enabled" 0 &
 localectl set-x11-keymap gb &
 xset r rate 200 30 &
-xrandr --output DP1 --same-as eDP1
 xrandr --output eDP1 --brightness 0.5
 xrandr --output eDP1 --scale 0.5x0.5 --filter nearest
+xrandr --output DP1 --same-as eDP1
 xrandr --output DP1 --scale 1x1
 xsetroot -cursor_name left_ptr &
-xss-lock -- systemctl suspend &
-xset s 600 600
+#xss-lock -- systemctl suspend &
+#xset s 600 600
+
 {
     eval $(ssh-agent)
     ssh-add
 } &
-gnome-keyring-daemon &
+#gnome-keyring-daemon &
 polybar -r main &
 dunst &
 sxhkd &
