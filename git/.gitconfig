@@ -1,5 +1,5 @@
 [user]
-    email = pgavagordon@gmail.com
+    email = avagordon01@gmail.com
     name = Ava Gordon
 [alias]
     share = !git pull && git add . && git commit -m "tmp code sharing, please squash" && git push
