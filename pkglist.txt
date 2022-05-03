@@ -22,8 +22,10 @@ pwgen
 ranger
 stow
 sxhkd
+tamsyn-font
 tmux
 xsel
+xss-lock
 xorg-xinit
 xorg-server
 xorg-xrandr
