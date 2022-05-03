@@ -1,6 +1,7 @@
-#xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Accel Profile Enabled" 0, 2 &
-xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1 &
-xinput set-prop "SYNA2393:00 06CB:7A13 Touchpad" "libinput Disable While Typing Enabled" 0 &
+xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Accel Profile Enabled" 0, 2 &
+xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Accel Speed" 1 &
+xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Tapping Enabled" 1 &
+xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Disable While Typing Enabled" 0 &
 localectl set-x11-keymap gb &
 xset r rate 200 30 &
 xrandr --output DP1 --same-as eDP1

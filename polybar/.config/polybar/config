@@ -60,7 +60,7 @@ label-connected = eth
 
 [module/wlan]
 type = internal/network
-interface = wlp59s0
+interface = wlan0
 label-connected = wifi %essid%
 
 [module/date]
