@@ -1,9 +1,6 @@
 tasks:
     tv:
-        rss: http://showrss.info/user/236333.rss?magnets=true&namespaces=true&name=null&quality=any&re=yes
-        exists_series: ~/download
+        rss: https://showrss.info/user/236333.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
+        exists_series: /opt/download
         all_series:
-            quality: 720p
             propers: no
-        aria2:
-            path: ~/download

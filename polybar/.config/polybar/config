@@ -4,7 +4,7 @@ foreground = #eee
 font-0 = Hack:size=8
 dpi = 192
 modules-left = menu
-modules-right = wlan eth0 eth1 volume battery date
+modules-right = wlan eth0 eth1 temperature backlight volume battery date
 separator = "   "
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -48,6 +48,13 @@ icon-pause = pause
 icon-prev = prev
 icon-next = next
 
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+format = <label>
+label = brightness %percentage:3%%
+enable-scroll = true
+
 [module/eth0]
 type = internal/network
 interface = enp0s31f6
@@ -74,7 +81,7 @@ type = internal/pulseaudio
 format-volume = <label-volume>
 label-volume = volume %percentage:3%%
 label-muted = muted  %percentage:3%%
-interval = 1
+interval = 4
 
 [module/battery]
 type = internal/battery
@@ -88,3 +95,9 @@ format-full = <label-full>
 label-charging = battery %percentage:3%%
 label-discharging = battery %percentage:3%%
 label-full = battery %percentage:3%%
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 1
+warn-temperature = 1000
+label = temperature %temperature-c:3%

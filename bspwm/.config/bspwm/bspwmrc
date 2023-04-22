@@ -1,5 +1,5 @@
 #!/bin/sh
-bspc config window_gap 16
+bspc config window_gap 0
 bspc config border_width 0
 bspc config gapless_monocle true
 bspc config borderless_monocle true

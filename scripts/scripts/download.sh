@@ -2,5 +2,5 @@
 
 set -eu -o pipefail
 
-(sleep 1; flexget execute) &
-aria2c --enable-rpc --rpc-listen-all --seed-time=0
+flexget
+aria2c --dir=/opt/download/ --input-file=/opt/download/list.txt --deferred-input true --seed-time=0
