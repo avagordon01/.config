@@ -1,8 +1,8 @@
 [bar/main]
-height = 13
 background = #222
 foreground = #eee
-font-0 = Misc Tamsyn:pixelsize=11
+font-0 = Hack:size=8
+dpi = 192
 modules-left = menu
 modules-right = wlan eth0 eth1 volume battery date
 separator = "   "
