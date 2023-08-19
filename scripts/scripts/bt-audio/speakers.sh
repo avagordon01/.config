@@ -9,9 +9,10 @@ set -euo pipefail
 #bluetoothctl agent on
 #bluetoothctl devices
 
-bluetoothctl connect E0:0A:F6:E6:26:9E
+addr=E0:0A:F6:E6:26:9E
+bluetoothctl connect $addr
 
 #do these to be able to power on device via bluetooth
 #bluetoothctl scan on
-#bluetoothctl pair E0:0A:F6:E6:26:9E
-#bluetoothctl trust E0:0A:F6:E6:26:9E
+#bluetoothctl pair $addr
+#bluetoothctl trust $addr

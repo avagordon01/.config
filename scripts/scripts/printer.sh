@@ -3,5 +3,5 @@
 set -euo pipefail
 
 sudo systemctl start avahi-daemon.service
-sudo systemctl start org.cups.cupsd.service
+sudo systemctl start cups.service
 $BROWSER localhost:631
