@@ -9,13 +9,13 @@ dunst
 feh
 firefox
 git
+helix
 htop
 imagemagick
 jq
 minidlna
 mlocate
 mpv
-neovim
 netpbm
 openssh
 playerctl
