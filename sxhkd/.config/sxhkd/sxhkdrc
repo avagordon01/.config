@@ -2,25 +2,11 @@ alt + {_,shift} + Tab
     bspc node {next,prev}.window -f
 alt + q
     bspc node focused -c
-alt + shift + q
-    bspc quit
 alt + m
     bspc desktop --layout next
 alt + l
     systemctl suspend
 alt + shift + t
     alacritty
-alt + b
-    firefox
-alt + r
-    ~/scripts/reset.sh
-Print
-    scrot
-shift + Print
-    scrot -u
-alt + Print
-    pkill recordmydesktop || (recordmydesktop -o "$(date -Iseconds).ogv" && notify-send "recording done")
 alt + {p,bracketleft,bracketright}
     playerctl {play-pause,previous,next}
-alt + n
-    bspc node -t ~fullscreen
