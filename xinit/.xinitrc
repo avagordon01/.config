@@ -1,9 +1,10 @@
-xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Accel Profile Enabled" 0, 1 &
-xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Accel Speed" 1 &
-xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Tapping Enabled" 1 &
-xinput set-prop "DELL0A5D:00 04F3:311C Touchpad" "libinput Disable While Typing Enabled" 0 &
-localectl set-x11-keymap gb &
+touchpad="DELL0A5D:00 04F3:311C Touchpad"
+xinput set-prop "${touchpad}" "libinput Accel Profile Enabled" 0, 1 &
+xinput set-prop "${touchpad}" "libinput Accel Speed" 1 &
+xinput set-prop "${touchpad}" "libinput Tapping Enabled" 1 &
+xinput set-prop "${touchpad}" "libinput Disable While Typing Enabled" 0 &
 xset r rate 200 30 &
+localectl set-x11-keymap gb &
 xrdb -merge ~/.Xresources
 xrandr --dpi 192
 xrandr --output DP1 --same-as eDP1
