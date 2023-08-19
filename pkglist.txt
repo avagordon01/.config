@@ -20,8 +20,8 @@ netpbm
 openssh
 playerctl
 polybar
+progress
 pwgen
-ranger
 scrot
 stow
 sxhkd
