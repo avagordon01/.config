@@ -1,0 +1,30 @@
+{
+    "audio": "pipewire",
+    "bootloader": "systemd-bootctl",
+    "!encryption-password": "tmppassword",
+    "filesystem": "ext4",
+    "gfx_driver": "Nvidia",
+    "harddrive": {
+        "path": "/dev/nvme0n1"
+    },
+    "hostname": "ava-laptop",
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-language": "uk",
+    "mirror-region": "Worldwide",
+    "nic": {
+        "NetworkManager": true
+    },
+    "ntp": true,
+    "packages": ["base", "base-devel", "alacritty", "aria2", "bash", "bash-completion", "bspwm", "dunst", "feh", "firefox", "git", "helix", "htop", "imagemagick", "jq", "minidlna", "mlocate", "mpv", "netpbm", "openssh", "playerctl", "polybar", "progress", "pwgen", "scrot", "stow", "sxhkd", "tmux", "ttf-hack", "xsel", "xss-lock", "xorg-xinit", "xorg-server", "xorg-xrandr", "xorg-xset", "xorg-xsetroot", "xorg-xbacklight", "xorg-xinput", "pulsemixer", "ripgrep", "fd", "tree"],
+    "services": ["bluetooth", "minidlna"],
+    "sys-encoding": "utf-8",
+    "sys-language": "en_GB",
+    "timezone": "Europe/London",
+    "superusers": {
+        "ava": {
+            "!password": "tmppassword"
+        }
+    }
+}
