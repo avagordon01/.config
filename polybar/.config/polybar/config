@@ -4,7 +4,7 @@ foreground = #eee
 font-0 = Hack:size=8
 dpi = 192
 modules-left = menu
-modules-right = wlan eth0 eth1 temperature backlight volume battery date
+modules-right = wlan eth0 eth1 backlight volume battery date
 separator = "   "
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -95,9 +95,3 @@ format-full = <label-full>
 label-charging = battery %percentage:3%%
 label-discharging = battery %percentage:3%%
 label-full = battery %percentage:3%%
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 1
-warn-temperature = 1000
-label = temperature %temperature-c:3%
