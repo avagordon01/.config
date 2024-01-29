@@ -1,0 +1,30 @@
+import = ["/home/ava/.config/alacritty/ubuntu-black.toml"]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 8
+
+[font.normal]
+family = "Hack"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
