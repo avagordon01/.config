@@ -4,18 +4,6 @@ xinput set-prop "${touchpad}" "libinput Accel Speed" 1 &
 xinput set-prop "${touchpad}" "libinput Tapping Enabled" 1 &
 xinput set-prop "${touchpad}" "libinput Disable While Typing Enabled" 0 &
 xset r rate 200 30 &
-localectl set-x11-keymap gb &
-xrdb -merge ~/.Xresources
-xrandr --dpi 192
-xrandr --output DP1 --same-as eDP1
-xrandr --output DP1 --scale 1x1
-xsetroot -cursor_name left_ptr &
 
-{
-    eval $(ssh-agent)
-    ssh-add
-} &
-polybar -r main &
-dunst &
-sxhkd &
-exec bspwm
+export DESKTOP_SESSION=plasma
+exec startplasma-x11
