@@ -1,6 +1,0 @@
-tasks:
-    tv:
-        rss: https://showrss.info/user/236333.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
-        exists_series: /opt/download
-        all_series:
-            propers: no
