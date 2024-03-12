@@ -18,9 +18,9 @@ alias hx='helix'
 alias c='history -c; tmux clear-history; clear'
 alias we='watchexec -c -d 10'
 alias gdb='gdb -q'
-alias xcopy='xsel -ib'
-alias xpaste='xsel -ob'
-alias xclear='xsel -cb'
+alias xcopy='wl-copy'
+alias xpaste='wl-paste'
+alias xclear='wl-copy -c'
 alias nping='ping -f -i 0.2 1.1.1.1'
 
 function run {
@@ -36,14 +36,14 @@ export EDITOR=nvim
 export BROWSER=firefox
 
 _xcut() {
-    echo "${READLINE_LINE}" | xsel -ib
+    echo "${READLINE_LINE}" | wl-copy
     READLINE_LINE=""
 }
 _xcopy() {
-    echo "${READLINE_LINE}" | xsel -ib
+    echo "${READLINE_LINE}" | wl-copy
 }
 _xpaste() {
-    READLINE_LINE="$(xsel -ob)"
+    READLINE_LINE="$(wl-paste)"
 }
 bind -m vi -x '"dd": _xcut'
 bind -m vi -x '"yy": _xcopy'
