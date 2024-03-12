@@ -48,3 +48,7 @@ _xpaste() {
 bind -m vi -x '"dd": _xcut'
 bind -m vi -x '"yy": _xcopy'
 bind -m vi -x '"p": _xpaste'
+
+shopt -s nocaseglob
+shopt -s cdspell
+shopt -s autocd

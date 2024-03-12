@@ -26,7 +26,7 @@
 [submodule]
     recurse = true
 [merge]
-    conflictstyle = diff3
+    conflictStyle = zdiff3
 [pull]
     rebase = false
 [filter "lfs"]
