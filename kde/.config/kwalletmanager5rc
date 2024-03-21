@@ -1,6 +1,0 @@
-[MainWindow]
-ToolBarsMovable=Disabled
-
-[WalletEditor]
-AlwaysShowContents=false
-SplitterSize=225,297

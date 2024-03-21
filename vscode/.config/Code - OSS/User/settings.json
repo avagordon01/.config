@@ -3,6 +3,7 @@
     "workbench.colorCustomizations": {
         "editor.wordHighlightBackground": "#00ffff44",
         "editor.findMatchHighlightBackground": "#00ffff88",
+        "statusBar.background": "#303030",
     },
     "workbench.colorTheme": "Nofrills",
     "editor.tokenColorCustomizations": {
@@ -24,4 +25,5 @@
     "editor.bracketPairColorization.enabled": false,
     "cmake.configureOnOpen": true,
     "cmake.showConfigureWithDebuggerNotification": false,
+    "debug.onTaskErrors": "showErrors",
 }
