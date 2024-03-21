@@ -16,6 +16,7 @@ openssh
 plasma-meta
 playerctl
 progress
+stow
 tmux
 ttf-hack
 ripgrep
