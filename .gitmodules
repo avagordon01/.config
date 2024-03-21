@@ -1,3 +1,0 @@
-[submodule "tmux/.config/tmux-better-mouse-mode"]
-	path = tmux/.config/tmux-better-mouse-mode
-	url = git@github.com:NHDaly/tmux-better-mouse-mode
