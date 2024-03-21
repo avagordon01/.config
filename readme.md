@@ -1,5 +1,6 @@
 # .config
 
+## setup
 ```
 sudo pacman -Syu git
 cd $HOME
@@ -8,4 +9,9 @@ cd .config
 sudo pacman -Syu $(cat pkglist.txt)
 stow bash
 yay -S $(cat aurpkglist.txt)
+```
+
+## restore
+```
+./scripts/restore.sh
 ```
