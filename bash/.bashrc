@@ -52,3 +52,4 @@ bind -m vi -x '"p": _xpaste'
 shopt -s nocaseglob
 shopt -s cdspell
 shopt -s autocd
+
