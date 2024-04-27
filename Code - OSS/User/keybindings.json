@@ -1,6 +1,18 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleMaximizedPanel",
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.action.terminal.split",
+    },
+    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },

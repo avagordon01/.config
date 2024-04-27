@@ -26,4 +26,6 @@
     "cmake.configureOnOpen": true,
     "cmake.showConfigureWithDebuggerNotification": false,
     "debug.onTaskErrors": "showErrors",
+    "cmake.showOptionsMovedNotification": false,
+    "vim.useSystemClipboard": true,
 }
