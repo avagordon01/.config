@@ -19,6 +19,7 @@ rsync \
     --exclude='Downloads' \
     --exclude='/opt/download/*' \
     --exclude='/home/ava/repos/art/data/*' \
+    --exclude='/home/ava/isos/*' \
     --exclude='/home/ava/.local/share/Steam/steamapps/common' \
     --exclude='.VirtualBoxVMs' \
     --exclude='.ecryptfs' \
