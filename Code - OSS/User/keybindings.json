@@ -1,5 +1,13 @@
-// Place your key bindings in this file to override the defaults
 [
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus",
+    },
     {
         "key": "ctrl+p",
         "command": "workbench.action.quickOpen",
@@ -13,19 +21,47 @@
         "command": "workbench.action.terminal.split",
     },
     {
+        "key": "alt+a",
+        "command": "workbench.action.terminal.kill",
+    },
+    {
+        "key": "alt+e",
+        "command": "workbench.action.terminal.focusNextPane",
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.terminal.focusPreviousPane",
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "editor.action.marker.next",
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "editor.action.marker.prev",
+    },
+    {
+        "key": "ctrl+right",
+        "command": "editor.action.marker.nextInFiles",
+    },
+    {
+        "key": "ctrl+left",
+        "command": "editor.action.marker.prevInFiles",
+    },
+    {
         "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor"
+        "command": "workbench.action.nextEditor",
     },
     {
         "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
+        "command": "-workbench.action.nextEditor",
     },
     {
         "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor"
+        "command": "workbench.action.previousEditor",
     },
     {
         "key": "ctrl+pageup",
-        "command": "-workbench.action.previousEditor"
-    }
+        "command": "-workbench.action.previousEditor",
+    },
 ]

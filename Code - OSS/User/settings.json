@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -1.5,
     "workbench.colorCustomizations": {
         "editor.wordHighlightBackground": "#00ffff44",
         "editor.findMatchHighlightBackground": "#00ffff88",
@@ -23,9 +23,12 @@
     "editor.autoClosingOvertype": "never",
     "editor.autoClosingQuotes": "never",
     "editor.bracketPairColorization.enabled": false,
-    "cmake.configureOnOpen": true,
+    "cmake.configureOnOpen": false,
     "cmake.showConfigureWithDebuggerNotification": false,
     "debug.onTaskErrors": "showErrors",
     "cmake.showOptionsMovedNotification": false,
     "vim.useSystemClipboard": true,
+    "workbench.startupEditor": "none",
+    "terminal.integrated.showExitAlert": false,
+    "terminal.integrated.tabs.enabled": false,
 }
