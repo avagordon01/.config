@@ -2,20 +2,9 @@
     email = avagordon01@gmail.com
     name = Ava Gordon
 [alias]
-    share = !git pull && git add . && git commit -m "tmp code sharing, please squash" && git push
     fa = fetch --all --prune --tags --prune-tags
     drop = reset HEAD --hard
     goa = log --graph --oneline --all
-    go = log --graph --oneline
-    ga = log --graph --all
-    shad = describe --match --no-match --always --abbrev --dirty
-    sha = rev-parse --short HEAD
-    bp = "!f() { git merge-base develop $1 || git merge-base master $1 || git merge-base main $1; }; f"
-    br = !git rebase -i $(git bp HEAD)
-    bd = "!f() { git diff $(git bp $1); }; f"
-    s = status
-    d = diff
-    c = commit -m
     cane = commit --amend --no-edit
 [push]
     default = current
