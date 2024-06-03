@@ -14,39 +14,53 @@
     },
     {
         "key": "alt+z",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus",
+    },
+    {
+        "key": "alt+a",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus",
+    },
+    {
+        "key": "alt+e",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus",
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus",
+    },
+    {
+        "key": "alt+z",
         "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus",
     },
     {
         "key": "alt+d",
         "command": "workbench.action.terminal.split",
+        "when": "terminalFocus",
     },
     {
         "key": "alt+a",
         "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus",
     },
     {
         "key": "alt+e",
         "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus",
     },
     {
         "key": "alt+w",
         "command": "workbench.action.terminal.focusPreviousPane",
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "editor.action.marker.next",
-    },
-    {
-        "key": "ctrl+shift+left",
-        "command": "editor.action.marker.prev",
-    },
-    {
-        "key": "ctrl+right",
-        "command": "editor.action.marker.nextInFiles",
-    },
-    {
-        "key": "ctrl+left",
-        "command": "editor.action.marker.prevInFiles",
+        "when": "terminalFocus",
     },
     {
         "key": "ctrl+tab",
