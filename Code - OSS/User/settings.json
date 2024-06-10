@@ -1,5 +1,6 @@
 {
     "window.zoomLevel": -1,
+    "window.newWindowDimensions": "maximized",
     "workbench.colorCustomizations": {
         "editor.wordHighlightBackground": "#00ffff44",
         "editor.findMatchHighlightBackground": "#00ffff88",
@@ -27,6 +28,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modifications",
     "editor.guides.indentation": false,
+    "editor.minimap.renderCharacters": false,
     "editor.wordWrap": "on",
     "files.autoSave": "onFocusChange",
     "files.hotExit": "onExitAndWindowClose",
@@ -43,10 +45,9 @@
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
     "vim.useSystemClipboard": true,
-    "workbench.startupEditor": "none",
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
     "window.confirmSaveUntitledWorkspace": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.location": "hidden",
 }
