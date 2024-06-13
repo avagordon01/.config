@@ -49,5 +49,5 @@
     "window.menuBarVisibility": "toggle",
     "workbench.startupEditor": "none",
     "explorer.confirmDelete": false,
-    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.location": "top",
 }

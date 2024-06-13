@@ -1,5 +1,9 @@
 [
     {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
+    {
         "key": "ctrl+`",
         "command": "workbench.action.terminal.focus",
     },
@@ -29,12 +33,12 @@
     },
     {
         "key": "alt+e",
-        "command": "workbench.action.nextEditor",
+        "command": "workbench.action.focusNextGroup",
         "when": "editorFocus",
     },
     {
         "key": "alt+w",
-        "command": "workbench.action.previousEditor",
+        "command": "workbench.action.focusPreviousGroup",
         "when": "editorFocus",
     },
     {
