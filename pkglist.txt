@@ -5,6 +5,7 @@ code
 firefox
 git
 jellyfin
+moreutils
 openssh
 plasma-meta
 playerctl
