@@ -9,7 +9,7 @@
     "workbench.colorTheme": "Nofrills",
     "editor.tokenColorCustomizations": {
         "[Nofrills]": {
-            "strings":{
+            "strings": {
                 "foreground": "#00ff00",
                 "fontStyle": "",
             }
@@ -36,18 +36,41 @@
     "files.trimFinalNewlines": true,
     "git.openRepositoryInParentFolders": "always",
     "git.terminalGitEditor": true,
+    //"html.format.enable": false,
     "mesonbuild.downloadLanguageServer": true,
     "output.smartScroll.enabled": false,
     "security.workspace.trust.enabled": false,
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.hideOnStartup": "never",
+    "terminal.integrated.hideOnStartup": "always",
     "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
     "terminal.integrated.showExitAlert": false,
-    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.confirmOnExit": "never",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.quickOpen",
+        "openEditors.newUntitledFile",
+        "workbench.action.terminal.new",
+        "workbench.action.closeGroup",
+        "workbench.action.closeActiveEditor",
+        "workbench.action.newGroupRight",
+        "workbench.action.newGroupBelow",
+        "workbench.action.focusNextGroup",
+        "workbench.action.focusPreviousGroup",
+        "workbench.action.toggleMaximizeEditorGroup",
+    ],
     "vim.useSystemClipboard": true,
     "window.confirmSaveUntitledWorkspace": false,
     "window.menuBarVisibility": "toggle",
+    "workbench.editor.closeEmptyGroups": false,
     "workbench.startupEditor": "none",
     "explorer.confirmDelete": false,
     "workbench.activityBar.location": "top",
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false,
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
 }

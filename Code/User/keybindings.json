@@ -4,82 +4,81 @@
         "command": "workbench.action.toggleSidebarVisibility",
     },
     {
-        "key": "ctrl+`",
-        "command": "workbench.action.terminal.focus",
-    },
-    {
-        "key": "ctrl+`",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus",
-    },
-    {
         "key": "ctrl+p",
         "command": "workbench.action.quickOpen",
     },
     {
-        "key": "alt+z",
-        "command": "workbench.action.toggleMaximizeEditorGroup",
-        "when": "editorFocus",
+        "key": "alt+n",
+        "command": "openEditors.newUntitledFile",
     },
     {
-        "key": "alt+d",
-        "command": "workbench.action.splitEditorRight",
-        "when": "editorFocus",
+        "key": "alt+t",
+        "command": "workbench.action.terminal.new",
+    },
+    {
+        "key": "alt+a",
+        "command": "workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty",
     },
     {
         "key": "alt+a",
         "command": "workbench.action.closeActiveEditor",
-        "when": "editorFocus",
+        "when": "!activeEditorGroupEmpty",
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.action.newGroupRight",
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.action.newGroupBelow",
     },
     {
         "key": "alt+e",
         "command": "workbench.action.focusNextGroup",
-        "when": "editorFocus",
+    },
+    {
+        "key": "alt+shift+e",
+        "command": "workbench.action.moveEditorToNextGroup",
     },
     {
         "key": "alt+w",
         "command": "workbench.action.focusPreviousGroup",
-        "when": "editorFocus",
+    },
+    {
+        "key": "alt+shift+w",
+        "command": "workbench.action.moveEditorToPreviousGroup",
     },
     {
         "key": "alt+z",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus",
-    },
-    {
-        "key": "alt+d",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus",
-    },
-    {
-        "key": "alt+a",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus",
-    },
-    {
-        "key": "alt+e",
-        "command": "workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus",
-    },
-    {
-        "key": "alt+w",
-        "command": "workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
     },
     {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor",
     },
     {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor",
-    },
-    {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor",
     },
     {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor",
+    },
+    {
         "key": "ctrl+pageup",
         "command": "-workbench.action.previousEditor",
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
     },
 ]
