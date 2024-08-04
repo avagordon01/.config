@@ -51,6 +51,7 @@
         "workbench.action.quickOpen",
         "openEditors.newUntitledFile",
         "workbench.action.terminal.new",
+        "workbench.action.terminal.newLocal",
         "workbench.action.closeGroup",
         "workbench.action.closeActiveEditor",
         "workbench.action.newGroupRight",

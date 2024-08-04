@@ -16,6 +16,10 @@
         "command": "workbench.action.terminal.new",
     },
     {
+        "key": "alt+shift+t",
+        "command": "workbench.action.terminal.newLocal",
+    },
+    {
         "key": "alt+a",
         "command": "workbench.action.closeGroup",
         "when": "activeEditorGroupEmpty",
@@ -27,11 +31,19 @@
     },
     {
         "key": "alt+d",
-        "command": "workbench.action.newGroupRight",
+        "command": "runCommands",
+        "args": {"commands": [
+            "workbench.action.newGroupRight",
+            "workbench.action.terminal.new",
+        ]},
     },
     {
         "key": "alt+s",
-        "command": "workbench.action.newGroupBelow",
+        "command": "runCommands",
+        "args": {"commands": [
+            "workbench.action.newGroupBelow",
+            "workbench.action.terminal.new",
+        ]},
     },
     {
         "key": "alt+e",
