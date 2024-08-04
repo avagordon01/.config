@@ -5,7 +5,7 @@ Description=rsync backup
 Type=oneshot
 User=ava
 Group=ava
-ExecStart=/home/ava/.config/scripts/backup.sh
+ExecStart=/home/ava/.config/backup/backup.sh
 
 # filesystem access
 ProtectSystem=strict
