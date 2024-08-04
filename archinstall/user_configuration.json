@@ -1,0 +1,154 @@
+{
+    "additional-repositories": [
+        "multilib"
+    ],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Systemd-boot",
+    "config_version": "2.8.1",
+    "debug": false,
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "Boot",
+                            "ESP"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "3e6a10e5-b8ec-4960-aef3-25c9a326f877",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "de6bb6b3-0bc5-4ffa-b96a-0d846542bf26",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1023133704192
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "disk_encryption": null,
+    "hostname": "ava-laptop",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "uk",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_GB.UTF-8"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "United Kingdom": [
+                "https://www.mirrorservice.org/sites/ftp.archlinux.org/$repo/os/$arch",
+                "https://repo.slithery.uk/$repo/os/$arch",
+                "https://mirrors.ukfast.co.uk/sites/archlinux.org/$repo/os/$arch",
+                "https://mirrors.melbourne.co.uk/archlinux/$repo/os/$arch",
+                "https://mirror.st2projects.com/archlinux/$repo/os/$arch",
+                "https://mirror.netweaver.uk/archlinux/$repo/os/$arch",
+                "https://mirror.bytemark.co.uk/archlinux/$repo/os/$arch",
+                "https://london.mirror.pkgbuild.com/$repo/os/$arch",
+                "https://lon.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://gb.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch",
+                "http://www.mirrorservice.org/sites/ftp.archlinux.org/$repo/os/$arch",
+                "http://mirrors.ukfast.co.uk/sites/archlinux.org/$repo/os/$arch",
+                "http://mirrors.melbourne.co.uk/archlinux/$repo/os/$arch",
+                "http://mirror.netweaver.uk/archlinux/$repo/os/$arch",
+                "http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch",
+                "http://lon.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "http://gb.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "bash-completion",
+        "bluez",
+        "code",
+        "firefox",
+        "git",
+        "jellyfin-server",
+        "moreutils",
+        "playerctl"
+    ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": "Nvidia (proprietary)",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {}
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": "guided",
+    "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
+    "swap": false,
+    "timezone": "Europe/London",
+    "uki": false,
+    "version": "2.8.1"
+}

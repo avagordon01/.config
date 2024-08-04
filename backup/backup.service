@@ -1,0 +1,36 @@
+[Unit]
+Description=rsync backup
+
+[Service]
+Type=oneshot
+User=ava
+Group=ava
+ExecStart=/home/ava/.config/scripts/backup.sh
+
+# filesystem access
+ProtectSystem=strict
+PrivateTmp=true
+PrivateDevices=true
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+
+# network
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+
+# misc
+SystemCallArchitectures=native
+NoNewPrivileges=true
+RestrictRealtime=true
+MemoryDenyWriteExecute=true
+LockPersonality=true
+ProtectHostname=true
+RemoveIPC=true
+RestrictSUIDSGID=true
+ProtectClock=true
+
+# capabilities
+CapabilityBoundingSet=CAP_DAC_READ_SEARCH
+AmbientCapabilities=CAP_DAC_READ_SEARCH
+SystemCallFilter=@system-service
+SystemCallErrorNumber=EPERM
