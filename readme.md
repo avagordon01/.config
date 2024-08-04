@@ -12,6 +12,7 @@ cd $HOME
 git clone https://github.com/avagordon01/.config
 cd .config
 ln -s bash/.* ~
+ln -s autoexec.cfg ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/cfg
 sudo cp backup/* /etc/systemd/system
 sudo systemctl enable bluetooth.service jellyfin.service backup.timer
 yay -S $(cat aurpkglist.txt)
