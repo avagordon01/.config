@@ -5,7 +5,18 @@ Description=rsync backup
 Type=oneshot
 User=ava
 Group=ava
-ExecStart=/home/ava/.config/backup/backup.sh
+ExecStart=rsync \
+    -aH \
+    --stats \
+    --delete \
+    --exclude='/home/ava/repos/art/data/*' \
+    --exclude='/home/ava/.local/share/Steam/steamapps/common' \
+    --exclude='.ecryptfs' \
+    /boot \
+    /etc \
+    /home \
+    /usr \
+    zh4208@zh4208.rsync.net:backup
 
 # filesystem access
 ProtectSystem=strict

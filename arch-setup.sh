@@ -100,7 +100,7 @@ git clone https://github.com/avagordon01/.config
 cd .config
 ln -rs bash/.* ~
 ln -rs autoexec.cfg ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/cfg
-sudo cp backup/* /etc/systemd/system/
+sudo cp backup/backup.{service,timer} /etc/systemd/system/
 sudo systemctl enable \
     bluetooth.service \
     jellyfin.service \
