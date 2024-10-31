@@ -2,7 +2,7 @@
 
 set -ex
 
-loadkeys uk
+localectl set-keymap uk
 nmcli device wifi list
 nmcli device wifi connect $ssid password $password
 
@@ -12,7 +12,7 @@ parted /dev/nvme0n1 \
     mkpart "EFI system partition" fat32 0 1GiB \
     set 1 esp on \
     mkpart "root partition" ext4 1GiB 100% \
-    type 2 4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709 \
+    type 2 4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709
 mkfs.fat -F 32 /dev/nvme0n1p1
 mkfs.ext4 /dev/nvme0n1p2
 
@@ -21,20 +21,20 @@ mount --mkdir /dev/nvme0n1p2 /mnt
 mount --mkdir /dev/nvme0n1p1 /mnt/boot
 
 pacstrap -K /mnt base base-devel linux linux-firmware
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt > /mnt/etc/fstab
 arch-chroot /mnt
 
 #time and zone
-ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
+timedatectl set-timezone Europe/London
 hwclock --systohc
 timedatectl set-ntp true
 
 #locale
 echo "en_GB.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
-echo "LANG=en_GB.UTF-8" > /etc/locale.conf
-echo "KEYMAP=uk" > /etc/vconsole.conf
-echo "ava-laptop" > /etc/hostname
+localectl set-locale LANG=en_GB.UTF-8
+localectl set-keymap uk
+hostnamectl hostname ava-laptop
 
 #initramfs
 mkinitcpio -P
@@ -47,7 +47,7 @@ bootctl install
 echo "default arch
 timeout 0
 console-mode auto" > /boot/loader/loader.conf
-UUID=$(blkid -s UUID /dev/nvme0n1p1)
+UUID=$(blkid -s UUID -o value /dev/nvme0n1p1)
 echo "title arch
 linux /mvlinuz-linux
 initrd /intel-ucode.img
