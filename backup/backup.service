@@ -16,6 +16,7 @@ ExecStart=rsync \
     /etc \
     /home \
     /usr \
+    /var \
     zh4208@zh4208.rsync.net:backup
 
 # filesystem access

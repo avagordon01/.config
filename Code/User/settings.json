@@ -1,23 +1,4 @@
 {
-    "window.zoomLevel": -1,
-    "window.newWindowDimensions": "maximized",
-    "workbench.colorCustomizations": {
-        "editor.wordHighlightBackground": "#00ffff44",
-        "editor.findMatchHighlightBackground": "#00ffff88",
-        "statusBar.background": "#303030",
-    },
-    "workbench.colorTheme": "Nofrills",
-    "editor.tokenColorCustomizations": {
-        "[Nofrills]": {
-            "strings": {
-                "foreground": "#00ff00",
-                "fontStyle": "",
-            }
-        }
-    },
-    "cmake.configureOnOpen": false,
-    "cmake.showConfigureWithDebuggerNotification": false,
-    "cmake.showOptionsMovedNotification": false,
     "debug.onTaskErrors": "showErrors",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingComments": "never",
@@ -29,23 +10,29 @@
     "editor.formatOnSaveMode": "modifications",
     "editor.guides.indentation": false,
     "editor.minimap.renderCharacters": false,
+    "editor.tokenColorCustomizations": {
+        "[Nofrills]": {
+            "strings": {
+                "fontStyle": "",
+                "foreground": "#00ff00"
+            }
+        }
+    },
     "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
     "files.autoSave": "onFocusChange",
     "files.hotExit": "onExitAndWindowClose",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "git.openRepositoryInParentFolders": "always",
     "git.terminalGitEditor": true,
-    //"html.format.enable": false,
-    "mesonbuild.downloadLanguageServer": true,
     "output.smartScroll.enabled": false,
+    "scm.autoReveal": false,
+    "search.followSymlinks": false,
+    "search.ripgrep.maxThreads": 1,
+    "search.searchOnType": false,
     "security.workspace.trust.enabled": false,
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.hideOnStartup": "always",
-    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
-    "terminal.integrated.showExitAlert": false,
-    "terminal.integrated.defaultLocation": "editor",
-    "terminal.integrated.confirmOnExit": "never",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.toggleSidebarVisibility",
         "workbench.action.quickOpen",
@@ -59,19 +46,36 @@
         "workbench.action.focusNextGroup",
         "workbench.action.focusPreviousGroup",
         "workbench.action.toggleMaximizeEditorGroup",
+        "workbench.action.evenEditorWidths",
     ],
+    "terminal.integrated.confirmOnExit": "never",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.hideOnStartup": "always",
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "terminal.integrated.scrollback": 1000,
+    "terminal.integrated.showExitAlert": false,
     "vim.useSystemClipboard": true,
     "window.confirmSaveUntitledWorkspace": false,
+    "window.customTitleBarVisibility": "never",
+    "window.enableMenuBarMnemonics": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.editor.closeEmptyGroups": false,
-    "workbench.startupEditor": "none",
-    "explorer.confirmDelete": false,
+    "window.newWindowDimensions": "maximized",
+    "window.title": "${remoteName}${rootName}",
+    "window.zoomLevel": -1,
     "workbench.activityBar.location": "top",
-    "workbench.editor.autoLockGroups": {
-        "terminalEditor": false,
+    "workbench.colorCustomizations": {
+        "editor.findMatchHighlightBackground": "#00ffff88",
+        "editor.wordHighlightBackground": "#00ffff44",
+        "statusBar.background": "#303030"
     },
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
+    "workbench.colorTheme": "Nofrills",
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false
+    },
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.startupEditor": "none"
 }
