@@ -1,10 +1,9 @@
 alias ls='ls --color=auto'
 
+function run {
+    "$@" &> /dev/null & disown %
+}
+complete -F _command run
 complete -F _command prime-run
 
-shopt -s nocaseglob
-shopt -s cdspell
-shopt -s autocd
-
-export EDITOR="code -w"
-export VISUAL="code -w"
+shopt -s globstar nocaseglob cdspell autocd

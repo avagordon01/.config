@@ -47,7 +47,7 @@ bootctl install
 echo "default arch
 timeout 0
 console-mode auto" > /boot/loader/loader.conf
-UUID=$(blkid -s UUID -o value /dev/nvme0n1p1)
+UUID=$(blkid -s UUID -o value /dev/nvme0n1p2)
 echo "title arch
 linux /mvlinuz-linux
 initrd /intel-ucode.img
@@ -73,26 +73,50 @@ nmcli device wifi connect $ssid password $password
 
 #packages
 sudo pacman -Syu \
+    atool \
     bash-completion \
     bluez \
+    bpftrace \
     code \
     clang \
+    curl \
     fd \
     firefox \
     gcc \
+    gdb \
     git \
+    htop \
     jellyfin-server \
+    jq \
+    ktorrent \
     libqalculate \
+    lsof \
+    mixxx \
     moreutils \
+    mpv \
+    ncdu \
     neovim \
+    nmap \
     networkmanager \
-    nvidia \
+    nvidia-open \
+    openssh \
     pipewire \
     plasma-meta \
     playerctl \
+    podman \
     python \
-    rg \
-    sudo
+    rclone \
+    ripgrep \
+    rsync \
+    rustup \
+    skopeo \
+    socat \
+    steam \
+    sudo \
+    tree \
+    uv \
+    wireshark-cli \
+    yt-dlp
 
 #home config
 cd $HOME
