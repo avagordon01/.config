@@ -8,16 +8,20 @@
     cane = commit --amend --no-edit
 [push]
     default = current
+    autoSetupRemote = true
 [fetch]
     prune = true
 [diff]
     algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 [submodule]
     recurse = true
 [merge]
     conflictStyle = zdiff3
 [pull]
-    rebase = false
+    rebase = true
 [filter "lfs"]
     process = git-lfs filter-process
     required = true
