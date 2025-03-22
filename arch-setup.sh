@@ -20,7 +20,7 @@ mkfs.ext4 /dev/nvme0n1p2
 mount --mkdir /dev/nvme0n1p2 /mnt
 mount --mkdir /dev/nvme0n1p1 /mnt/boot
 
-pacstrap -K /mnt base base-devel linux linux-firmware
+pacstrap -K /mnt base sudo linux linux-firmware
 genfstab -U /mnt > /mnt/etc/fstab
 arch-chroot /mnt
 
@@ -71,39 +71,49 @@ homectl create ava
 nmcli device wifi list
 nmcli device wifi connect $ssid password $password
 
-#packages
-sudo pacman -Syu \
+#packages (desktop & GUI)
+sudo pacman -S \
+    firefox \
+    jellyfin-{ffmpeg,server,web} \
+    ktorrent \
+    konsole \
+    nvidia-open \
+    nvidia-prime \
+    mixxx \
+    mpv \
+    plasma-meta \
+    steam \
+
+#packages (dev tools)
+sudo pacman --noconfirm -Syu \
     atool \
     bash-completion \
-    bluez \
+    binutils \
     bpftrace \
-    code \
+    buildah \
     clang \
+    cmake \
+    code \
     curl \
     fd \
-    firefox \
     gcc \
     gdb \
     git \
     htop \
-    jellyfin-server \
     jq \
-    ktorrent \
+    lftp \
     libqalculate \
     lsof \
-    mixxx \
     moreutils \
-    mpv \
     ncdu \
     neovim \
     nmap \
-    networkmanager \
-    nvidia-open \
+    numactl \
     openssh \
-    pipewire \
-    plasma-meta \
-    playerctl \
+    perf \
+    pkgconf \
     podman \
+    progress \
     python \
     rclone \
     ripgrep \
@@ -111,12 +121,15 @@ sudo pacman -Syu \
     rustup \
     skopeo \
     socat \
-    steam \
+    strace \
     sudo \
+    toolbox \
     tree \
     uv \
+    wget \
+    which \
     wireshark-cli \
-    yt-dlp
+    yt-dlp \
 
 #home config
 cd $HOME
@@ -131,6 +144,15 @@ sudo systemctl enable \
     NetworkManager.service \
     backup.timer
 
+#install yay
+curl -o https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz
+tar -xf yay.tar.gz
+pushd yay
+makepkg -si
+popd
+
+#install AUR packages
 yay -S \
     code-features \
-    code-marketplace
+    code-marketplace \
+    minecraft-launcher \
