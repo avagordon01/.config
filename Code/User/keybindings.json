@@ -97,4 +97,39 @@
         "key": "alt+f",
         "command": "workbench.action.evenEditorWidths"
     },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-workbench.action.terminal.focus",
+        "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
 ]
