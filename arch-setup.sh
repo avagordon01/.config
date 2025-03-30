@@ -94,6 +94,7 @@ sudo pacman --noconfirm -Syu \
     clang \
     cmake \
     code \
+    csvkit \
     curl \
     fd \
     gcc \
@@ -104,6 +105,7 @@ sudo pacman --noconfirm -Syu \
     lftp \
     libqalculate \
     lsof \
+    meson \
     moreutils \
     ncdu \
     neovim \
@@ -113,11 +115,13 @@ sudo pacman --noconfirm -Syu \
     perf \
     pkgconf \
     podman \
+    postgresql \
     progress \
     python \
     rclone \
     ripgrep \
     rsync \
+    ruff \
     rustup \
     skopeo \
     socat \
