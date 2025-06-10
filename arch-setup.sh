@@ -89,22 +89,25 @@ sudo pacman --noconfirm -Syu \
     atool \
     bash-completion \
     binutils \
+    bloaty \
     bpftrace \
     buildah \
     clang \
     cmake \
     code \
-    csvkit \
     curl \
     fd \
+    fzf \
     gcc \
     gdb \
     git \
+    github-cli \
     htop \
     jq \
     lftp \
     libqalculate \
     lsof \
+    ltrace \
     meson \
     moreutils \
     ncdu \
@@ -112,6 +115,7 @@ sudo pacman --noconfirm -Syu \
     nmap \
     numactl \
     openssh \
+    patchelf \
     perf \
     pkgconf \
     podman \
@@ -120,9 +124,12 @@ sudo pacman --noconfirm -Syu \
     python \
     rclone \
     ripgrep \
+    rizin \
     rsync \
     ruff \
     rustup \
+    rz-cutter \
+    rz-ghidra \
     skopeo \
     socat \
     strace \
@@ -133,6 +140,7 @@ sudo pacman --noconfirm -Syu \
     wget \
     which \
     wireshark-cli \
+    wl-clipboard \
     yt-dlp \
 
 #home config
@@ -160,3 +168,22 @@ yay -S \
     code-features \
     code-marketplace \
     minecraft-launcher \
+
+#install vscode extensions
+for ext in \
+    charliermarsh.ruff \
+    ms-python.debugpy \
+    ms-python.python \
+    ms-python.vscode-pylance \
+    ms-toolsai.jupyter \
+    ms-toolsai.jupyter-renderers \
+    ms-vscode-remote.remote-ssh \
+    ms-vscode-remote.remote-ssh-edit \
+    ms-vscode.cpptools \
+    ms-vscode.remote-explorer \
+    rust-lang.rust-analyzer \
+    urld.nofrills \
+    vscodevim.vim
+; do
+    code --install-extension $ext
+done

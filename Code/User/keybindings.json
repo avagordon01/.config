@@ -8,6 +8,10 @@
         "command": "workbench.action.quickOpen",
     },
     {
+        "key": "ctrl+a",
+        "command": "workbench.action.terminal.selectAll",
+    },
+    {
         "key": "alt+n",
         "command": "openEditors.newUntitledFile",
     },
