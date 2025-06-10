@@ -15,6 +15,7 @@ ExecStart=rsync \
     /boot \
     /etc \
     /home \
+    /root \
     /usr \
     /var \
     zh4208@zh4208.rsync.net:backup
