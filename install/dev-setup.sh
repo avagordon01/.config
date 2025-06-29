@@ -2,7 +2,12 @@
 
 set -ex
 
-packages="\
+
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+dnf check-update || true
+
+sudo dnf install --assumeyes \
     atool \
     bash-completion \
     binutils \
@@ -13,12 +18,13 @@ packages="\
     cmake \
     code \
     curl \
+    cutter-re \
     fd \
     fzf \
     gcc \
     gdb \
+    gh \
     git \
-    github-cli \
     htop \
     jq \
     lftp \
@@ -45,8 +51,6 @@ packages="\
     rsync \
     ruff \
     rustup \
-    rz-cutter \
-    rz-ghidra \
     skopeo \
     socat \
     strace \
@@ -59,34 +63,6 @@ packages="\
     wireshark-cli \
     wl-clipboard \
     yt-dlp \
-"
-
-source /etc/os-release
-if [ "$NAME" = "Arch Linux" ]; then
-    sudo pacman --noconfirm -Syu $packages
-
-    curl -o https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz
-    tar -xf yay.tar.gz
-    pushd yay
-    makepkg -si
-    popd
-
-    yay -S \
-        code-features \
-        code-marketplace
-elif [ "$NAME" = "Fedora Linux" ]; then
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-    dnf check-update
-
-    sudo dnf install --assumeyes $packages
-fi
-exit
-
-cd $HOME
-git clone https://github.com/avagordon01/.config
-cd .config
-ln -rs bash/.* ~
 
 for ext in \
     astral-sh.ty \
