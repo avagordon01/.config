@@ -1,6 +1,8 @@
 [user]
     email = avagordon01@gmail.com
     name = Ava Gordon
+[core]
+    editor = nvim
 [alias]
     fa = fetch --all --prune --tags --prune-tags
     drop = reset HEAD --hard
