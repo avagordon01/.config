@@ -48,7 +48,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "git.openRepositoryInParentFolders": "always",
-    "git.terminalGitEditor": true,
+    "git.terminalGitEditor": false,
     "jupyter.askForKernelRestart": false,
     "notebook.codeActionsOnSave": {
         "notebook.source.fixAll": "explicit",
