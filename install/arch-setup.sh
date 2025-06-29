@@ -76,7 +76,6 @@ nmcli device wifi connect $ssid password $password
 #packages (desktop & GUI)
 sudo pacman -S \
     distrobox \
-    firefox \
     flatpak{,-kcm} \
     nvidia-open \
     nvidia-prime \
