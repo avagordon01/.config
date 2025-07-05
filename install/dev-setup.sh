@@ -2,7 +2,12 @@
 
 set -ex
 
+# https://wiki.archlinux.org/title/Distrobox#Use_systemd_inside_the_container
+sudo ln -s /run/host/run/systemd/system /run/systemd
+sudo mkdir -p /run/dbus
+sudo ln -s /run/host/run/dbus/system_bus_socket /run/dbus
 
+# https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 dnf check-update || true

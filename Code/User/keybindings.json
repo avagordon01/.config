@@ -19,9 +19,16 @@
         "key": "alt+t",
         "command": "workbench.action.terminal.new",
     },
+    // {
+    //     "key": "alt+shift+t",
+    //     "command": "workbench.action.terminal.newLocal",
+    // },
     {
         "key": "alt+shift+t",
-        "command": "workbench.action.terminal.newLocal",
+        "command": "workbench.action.terminal.newWithProfile",
+        "args":{
+            "profileName":"bash (outside distrobox)"
+        },
     },
     {
         "key": "alt+a",

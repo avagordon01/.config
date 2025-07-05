@@ -21,6 +21,7 @@
     "C_Cpp.formatting": "clangFormat",
     "debug.onTaskErrors": "showErrors",
     "editor.acceptSuggestionOnEnter": "off",
+    "chat.agent.enabled": false,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingComments": "never",
     "editor.autoClosingDelete": "never",
@@ -77,6 +78,7 @@
         "workbench.action.toggleMaximizeEditorGroup",
         "workbench.action.evenEditorWidths",
         "workbench.action.terminal.selectAll",
+        "workbench.action.terminal.newWithProfile",
     ],
     "terminal.integrated.confirmOnExit": "never",
     "terminal.integrated.confirmOnKill": "never",
@@ -85,6 +87,12 @@
     "terminal.integrated.hideOnStartup": "always",
     "terminal.integrated.localEchoEnabled": "auto",
     "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "terminal.integrated.profiles.linux": {
+        "bash (outside distrobox)": {
+            "path": "distrobox-host-exec",
+            "args": ["/bin/bash"]
+        }
+    },
     "terminal.integrated.scrollback": 1000,
     "terminal.integrated.showExitAlert": false,
     "vim.useSystemClipboard": true,
@@ -100,7 +108,8 @@
     "workbench.colorCustomizations": {
         "editor.findMatchHighlightBackground": "#00ffff88",
         "editor.wordHighlightBackground": "#00ffff44",
-        "statusBar.background": "#303030"
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground" : "#303030",
     },
     "workbench.colorTheme": "Nofrills",
     "workbench.editor.autoLockGroups": {
