@@ -30,6 +30,8 @@ sudo dnf install --assumeyes \
     gdb \
     gh \
     git \
+    git-lfs \
+    git-filter-repo \
     htop \
     jq \
     lftp \
@@ -60,7 +62,6 @@ sudo dnf install --assumeyes \
     socat \
     strace \
     sudo \
-    toolbox \
     tree \
     uv \
     wget \
