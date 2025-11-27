@@ -1,6 +1,6 @@
 {
     "[cpp]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.formatOnSaveMode": "file"
     },
     "[python]": {
@@ -22,6 +22,7 @@
     "debug.onTaskErrors": "showErrors",
     "editor.acceptSuggestionOnEnter": "off",
     "chat.agent.enabled": false,
+    "chat.disableAIFeatures": true,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingComments": "never",
     "editor.autoClosingDelete": "never",
@@ -88,6 +89,9 @@
     "terminal.integrated.localEchoEnabled": "auto",
     "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
     "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/bin/bash",
+        },
         "bash (outside distrobox)": {
             "path": "distrobox-host-exec",
             "args": ["/bin/bash"]
@@ -119,5 +123,6 @@
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.tabActionCloseVisibility": false,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "Hack"
 }
