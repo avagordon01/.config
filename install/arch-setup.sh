@@ -81,7 +81,8 @@ sudo pacman -S \
     nvidia-prime \
     plasma-meta \
     podman \
-    steam \
+    systemd-resolvconf \
+    wireguard-tools \
 
 sudo systemctl enable \
     bluetooth.service \

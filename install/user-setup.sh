@@ -6,12 +6,15 @@ cd .config
 ln -rs bash/.* ~
 
 distrobox assemble create
+# flatpak list --app --columns application
 sudo flatpak install -y \
     com.borgbase.Vorta \
+    com.mojang.Minecraft \
+    com.valvesoftware.Steam \
+    io.mpv.Mpv \
     org.jellyfin.JellyfinServer \
-    org.kde.ktorrent \
     org.kde.konsole \
+    org.kde.ktorrent \
     org.mixxx.Mixxx \
     org.mozilla.firefox \
-    io.github.plrigaux.sysd-manager \
-    io.mpv.Mpv \
+    org.nicotine_plus.Nicotine \

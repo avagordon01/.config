@@ -7,31 +7,24 @@ sudo ln -s /run/host/run/systemd/system /run/systemd
 sudo mkdir -p /run/dbus
 sudo ln -s /run/host/run/dbus/system_bus_socket /run/dbus
 
-# https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-dnf check-update || true
-
-sudo dnf install --assumeyes \
+sudo pacman -Syu --noconfirm \
     atool \
     bash-completion \
     binutils \
     bloaty \
     bpftrace \
-    buildah \
     clang \
     cmake \
     code \
     curl \
-    cutter-re \
     fd \
     fzf \
     gcc \
     gdb \
-    gh \
     git \
     git-lfs \
     git-filter-repo \
+    github-cli \
     htop \
     jq \
     lftp \
@@ -40,7 +33,6 @@ sudo dnf install --assumeyes \
     ltrace \
     meson \
     moreutils \
-    ncdu \
     neovim \
     nmap \
     numactl \
@@ -48,7 +40,6 @@ sudo dnf install --assumeyes \
     patchelf \
     perf \
     pkgconf \
-    podman \
     postgresql \
     progress \
     python \
@@ -58,6 +49,7 @@ sudo dnf install --assumeyes \
     rsync \
     ruff \
     rustup \
+    rz-cutter \
     skopeo \
     socat \
     strace \
@@ -69,6 +61,22 @@ sudo dnf install --assumeyes \
     wireshark-cli \
     wl-clipboard \
     yt-dlp \
+
+sudo pacman -S --noconfirm \
+    debugedit \
+    fakeroot \
+    binutils \
+    make \
+    gcc \
+
+wcurl https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz
+tar -xf yay.tar.gz
+cd yay
+makepkg -si --noconfirm
+
+yay -S --noconfirm \
+    code-features \
+    code-marketplace \
 
 for ext in \
     astral-sh.ty \
@@ -89,7 +97,9 @@ for ext in \
     ms-vscode.remote-explorer \
     rust-lang.rust-analyzer \
     urld.nofrills \
-    vscodevim.vim
+    vscodevim.vim \
 ; do
     code --install-extension $ext
 done
+
+distrobox-export --app code
