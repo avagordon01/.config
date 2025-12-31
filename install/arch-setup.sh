@@ -20,5 +20,10 @@ exit
 
 #extra packages
 sudo pacman -S \
+    mesa \
+    vulkan-radeon \
+    nvidia-utils \
+    nvidia-open \
+    framework-system \
     distrobox \
     podman \
