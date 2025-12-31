@@ -9,6 +9,7 @@ sudo ln -s /run/host/run/dbus/system_bus_socket /run/dbus
 
 sudo pacman -Syu --noconfirm \
     atool \
+    base-devel \
     bash-completion \
     binutils \
     bloaty \
@@ -61,13 +62,6 @@ sudo pacman -Syu --noconfirm \
     wireshark-cli \
     wl-clipboard \
     yt-dlp \
-
-sudo pacman -S --noconfirm \
-    debugedit \
-    fakeroot \
-    binutils \
-    make \
-    gcc \
 
 wcurl https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz
 tar -xf yay.tar.gz
