@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+pacupgrade
+pacsync
+
 cd $HOME
 git clone https://github.com/avagordon01/.config
 cd .config

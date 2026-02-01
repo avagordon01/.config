@@ -14,16 +14,3 @@ systemctl reboot
 systemctl enable systemd-homed.service
 systemctl start systemd-homed.service
 homectl create ava
-
-#relogin
-exit
-
-#extra packages
-sudo pacman -S \
-    mesa \
-    vulkan-radeon \
-    nvidia-utils \
-    nvidia-open \
-    framework-system \
-    distrobox \
-    podman \

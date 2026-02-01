@@ -1,6 +1,29 @@
+# base desktop
+archinstall
+base
+bluez-utils
+cpupower
+cups
+distrobox
+dolphin
+ecryptfs-utils
+flatpak
+framework-system
+intel-ucode
+mesa
+nvidia-open
+nvidia-utils
+nvidia-prime
+pacman-contrib
+pacutils
+plasma-meta
+podman
+vulkan-radeon
+wireguard-tools
+
+# dev tools
 android-tools
 atool
-base
 base-devel
 bash-completion
 binutils
@@ -22,6 +45,7 @@ glibc-locales
 htop
 imagemagick
 jq
+less
 lftp
 libqalculate
 lsof
@@ -30,6 +54,7 @@ man-pages
 meson
 moreutils
 mtr
+ncdu
 neovim
 nmap
 numactl
