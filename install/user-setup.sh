@@ -21,3 +21,5 @@ sudo flatpak install -y \
     org.mixxx.Mixxx \
     org.mozilla.firefox \
     org.nicotine_plus.Nicotine \
+
+./vscode-setup.sh
