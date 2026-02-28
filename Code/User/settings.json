@@ -124,5 +124,6 @@
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "Hack"
+    "editor.fontFamily": "Hack",
+    "terminal.integrated.initialHint": false
 }
