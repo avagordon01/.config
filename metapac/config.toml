@@ -1,0 +1,7 @@
+enabled_backends = ["arch", "flatpak", "vscode"]
+
+[arch]
+package_manager = "paru"
+
+[vscode]
+variant = "code"
