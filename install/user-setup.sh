@@ -13,5 +13,3 @@ cd $HOME
 git clone https://github.com/avagordon01/.config
 cd .config
 ln -rs bash/.* ~
-
-distrobox assemble create

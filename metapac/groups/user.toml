@@ -1,6 +1,7 @@
 arch = { packages = [
   "aerc",
   "android-tools",
+  "apitrace",
   "atool",
   "base-devel",
   "bash-completion",
@@ -14,7 +15,6 @@ arch = { packages = [
   "code-marketplace",
   "curl",
   "fd",
-  "fzf",
   "gcc",
   "gdb",
   "git",
@@ -29,6 +29,7 @@ arch = { packages = [
   "lftp",
   "lsof",
   "ltrace",
+  "man-db",
   "man-pages",
   "meson",
   "metapac",
@@ -64,7 +65,6 @@ arch = { packages = [
   "which",
   "wireshark-cli",
   "wl-clipboard",
-  "yay",
   "yt-dlp",
 ] }
 flatpak = { repos = [

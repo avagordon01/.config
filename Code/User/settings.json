@@ -80,6 +80,9 @@
         "workbench.action.evenEditorWidths",
         "workbench.action.terminal.selectAll",
         "workbench.action.terminal.newWithProfile",
+        "workbench.action.showAllSymbols",
+        "editor.action.revealDefinition",
+        "editor.action.revealDeclaration",
     ],
     "terminal.integrated.confirmOnExit": "never",
     "terminal.integrated.confirmOnKill": "never",
@@ -92,10 +95,10 @@
         "bash": {
             "path": "/bin/bash",
         },
-        "bash (outside distrobox)": {
-            "path": "distrobox-host-exec",
-            "args": ["/bin/bash"]
-        }
+        // "bash (outside distrobox)": {
+        //     "path": "distrobox-host-exec",
+        //     "args": ["/bin/bash"]
+        // }
     },
     "terminal.integrated.scrollback": 1000,
     "terminal.integrated.showExitAlert": false,

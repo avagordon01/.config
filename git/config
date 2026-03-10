@@ -31,3 +31,9 @@
     smudge = git-lfs smudge -- %f
 [init]
 	defaultBranch = main
+[sendemail]
+    smtpserver = smtp.gmail.com
+    smtpuser = avagordon01@gmail.com
+    smtpencryption = ssl
+    smtpserverport = 465
+	annotate = yes

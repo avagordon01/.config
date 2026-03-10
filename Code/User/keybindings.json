@@ -22,17 +22,17 @@
             "profileName":"bash"
         },
     },
-    // {
-    //     "key": "alt+shift+t",
-    //     "command": "workbench.action.terminal.newLocal",
-    // },
     {
         "key": "alt+shift+t",
-        "command": "workbench.action.terminal.newWithProfile",
-        "args":{
-            "profileName":"bash (outside distrobox)"
-        },
+        "command": "workbench.action.terminal.newLocal",
     },
+    // {
+    //     "key": "alt+shift+t",
+    //     "command": "workbench.action.terminal.newWithProfile",
+    //     "args":{
+    //         "profileName":"bash (outside distrobox)"
+    //     },
+    // },
     {
         "key": "alt+a",
         "command": "workbench.action.closeGroup",
@@ -145,5 +145,17 @@
         "key": "ctrl+down",
         "command": "-workbench.action.terminal.focus",
         "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "editor.action.revealDefinition",
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "editor.action.revealDeclaration",
     },
 ]
