@@ -21,6 +21,8 @@ arch = { packages = [
   "paru",
   "plasma-meta",
   "podman",
+  "reflector",
   "vulkan-radeon",
+  "webkit2gtk-bin",
   "wireguard-tools",
 ] }
