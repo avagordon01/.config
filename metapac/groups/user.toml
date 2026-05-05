@@ -7,6 +7,7 @@ arch = { packages = [
   "binutils",
   "bloaty",
   "bpftrace",
+  "ccache",
   "clang",
   "cmake",
   "code",
