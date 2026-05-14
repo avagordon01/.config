@@ -24,6 +24,9 @@
     conflictStyle = zdiff3
 [pull]
     rebase = true
+[rebase]
+    autostash = true
+    autosquash = true
 [filter "lfs"]
     process = git-lfs filter-process
     required = true
