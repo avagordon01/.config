@@ -15,6 +15,7 @@ arch = { packages = [
   "code-marketplace",
   "curl",
   "fd",
+  "fq",
   "gcc",
   "gdb",
   "git",

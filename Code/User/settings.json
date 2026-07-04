@@ -138,5 +138,6 @@
         ["<", ">"]
     ],
     "workbench.editor.showIcons": false,
-    "workbench.editor.decorations.badges": false
+    "workbench.editor.decorations.badges": false,
+    "editor.minimap.enabled": false,
 }
