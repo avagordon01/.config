@@ -1,7 +1,7 @@
 {
     "[cpp]": {
         "editor.formatOnSave": false,
-        "editor.formatOnSaveMode": "file"
+        "editor.formatOnSaveMode": "modifications"
     },
     "[python]": {
         "editor.codeActionsOnSave": {
@@ -10,11 +10,11 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
+        "editor.formatOnSaveMode": "modifications"
     },
     "[rust]": {
         "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
+        "editor.formatOnSaveMode": "modifications"
     },
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
     "C_Cpp.default.cppStandard": "c++23",
@@ -23,6 +23,7 @@
     "editor.acceptSuggestionOnEnter": "off",
     "chat.agent.enabled": false,
     "chat.disableAIFeatures": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingComments": "never",
     "editor.autoClosingDelete": "never",
@@ -50,7 +51,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "git.openRepositoryInParentFolders": "always",
-    "git.terminalGitEditor": false,
+    "git.terminalGitEditor": true,
     "jupyter.askForKernelRestart": false,
     "notebook.codeActionsOnSave": {
         "notebook.source.fixAll": "explicit",
@@ -128,5 +129,14 @@
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.startupEditor": "none",
     "editor.fontFamily": "Hack",
-    "terminal.integrated.initialHint": false
+    "terminal.integrated.initialHint": false,
+    "C_Cpp.intelliSenseEngine":"disabled",
+    "editor.language.brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["<", ">"]
+    ],
+    "workbench.editor.showIcons": false,
+    "workbench.editor.decorations.badges": false
 }
