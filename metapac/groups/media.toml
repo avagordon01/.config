@@ -1,0 +1,16 @@
+flatpak = { repos = [
+  { name = "system:flathub", options = { url = "https://dl.flathub.org/repo/" } },
+], packages = [
+  { name = "system:at.vintagestory.VintageStory", options = { remote = "flathub" } },
+  { name = "system:com.mojang.Minecraft", options = { remote = "flathub" } },
+  { name = "system:com.protonvpn.www", options = { remote = "flathub" } },
+  { name = "system:com.stremio.Service", options = { remote = "flathub" } },
+  { name = "system:com.valvesoftware.Steam", options = { remote = "flathub" } },
+  { name = "system:io.mpv.Mpv", options = { remote = "flathub" } },
+  { name = "system:org.jellyfin.JellyfinServer", options = { remote = "flathub" } },
+  { name = "system:org.kde.ktorrent", options = { remote = "flathub" } },
+  { name = "system:org.mixxx.Mixxx", options = { remote = "flathub" } },
+  { name = "system:org.mozilla.firefox", options = { remote = "flathub" } },
+  { name = "system:org.nicotine_plus.Nicotine", options = { remote = "flathub" } },
+  { name = "system:org.openttd.OpenTTD", options = { remote = "flathub" } },
+] }

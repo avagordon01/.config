@@ -26,3 +26,8 @@ arch = { packages = [
   "webkit2gtk-bin",
   "wireguard-tools",
 ] }
+flatpak = { repos = [
+  { name = "system:flathub", options = { url = "https://dl.flathub.org/repo/" } },
+], packages = [
+  { name = "system:com.borgbase.Vorta", options = { remote = "flathub" } },
+] }
